@@ -160,9 +160,48 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_m0di8")
 
+[sub_resource type="ArrayMesh" id="ArrayMesh_eo1ho"]
+_surfaces = [{
+"aabb": AABB(-0.28720236, 0, -0.28720245, 0.5744052, 2.033199, 0.5744049),
+"format": 34896613377,
+"index_count": 84,
+"index_data": PackedByteArray("CAAJAAoACAALAAkACwAMAAkADQAIAAoACwAIAA0ADQAKAA4ACwAPAAwACwANAA8ADwAOAAwADwANAA4AAAABAAIAAAADAAEABAAAAAIAAwAFAAEABAACAAYAAwAHAAUABwAEAAYABwAGAAUAEAARABIAEAATABEAEwAUABEAFQAQABIAEwAQABUAFQASABYAEwAXABQAEwAVABcAFwAWABQAFwAVABYA"),
+"lods": [0.40848625, PackedByteArray("AAABAAIAAAADAAEABAAAAAIAAwAFAAEABAACAAYAAwAHAAUABwAEAAYABwAGAAUA")],
+"name": "Main",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("TgP7ALD8AABOAw3+TgMAAE4DDf6w/AAATgP7AE4DAACw/PsAsPwAALD8Df5OAwAAsPwN/rD8AACw/PsATgMAAAAAHwkAAAAAAAAAAP//AAAAAAAAAAAAAAAAHwn//wAA/v8AAP//AAD+/x8JAAAAAP7/AAAAAAAA/v8fCf//AAAAAN/2//8AAAAA//8AAAAAAAD/////AAAAAN/2AAAAAP////8AAAAA///f9v//AAD///////8AAP//3/YAAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_35vrp"]
+resource_name = "Sketchfab_Scene_Object_1"
+_surfaces = [{
+"aabb": AABB(-0.28720236, 0, -0.28720245, 0.5744052, 2.033199, 0.5744049),
+"attribute_data": PackedByteArray("wfcn2sH3J9oLdYr+C3WK/gt1J9oLdSfawfeK/sH3iv7B9yfawfcn2gt1iv4LdYr+C3Un2gt1J9rB94r+wfeK/sH3J9rB9yfaC3WK/gt1iv4LdSfaC3Un2sH3iv7B94r+wfcn2sH3J9oLdYr+C3WK/gt1J9oLdSfawfeK/sH3iv6CtQYPgrUGD3xAQwB8QEMAgrVDAIK1QwB8QAYPfEAGD4K1Bg+CtQYPfEBDAHxAQwCCtUMAgrVDAHxABg98QAYPfEBDAHxAQwCCtQYPgrUGD3xABg98QAYPgrVDAIK1QwB8QEMAfEBDAIK1Bg+CtQYPfEAGD3xABg+CtUIAgrVCAEQSHgJEEh4CPwcjDT8HIw0/Bx4CPwceAkQSIw1EEiMNgrUGD4K1Bg98QEMAfEBDAIK1QwCCtUMAfEAGD3xABg+CtQYPgrUGD3xAQwB8QEMAgrVDAIK1QwB8QAYPfEAGD3xAQwB8QEMAgrUGD4K1Bg98QAYPfEAGD4K1QwCCtUMAfEBDAHxAQwCCtQYPgrUGD3xABg98QAYPgrVCAIK1QgBEEh4CRBIeAj8HIw0/ByMNPwceAj8HHgJEEiMNRBIjDQ=="),
+"format": 34896613431,
+"index_count": 84,
+"index_data": PackedByteArray("EAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAAAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUA"),
+"lods": [0.40848625, PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0A")],
+"material": SubResource("StandardMaterial3D_y1yr2"),
+"name": "Main",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 56,
+"vertex_data": PackedByteArray("TgP7ALD8VNVOAw3+TgNU1U4DDf6w/FTVTgP7AE4DVNVOA/sATgP//7D8Df5OA///TgMN/k4D//+w/PsATgP//7D8+wBOA1TVsPwN/rD8VNWw/A3+TgNU1bD8+wCw/FTVsPz7ALD8/79OAw3+sPz/v7D8Df6w/P+/TgP7ALD8/78AAB8JAAD//wAAAAD/////AAAAAAAA//8AAB8J/////wAAHwn//////v8AAP////8AAAAA//////7/Hwn//////v8fCf///7/+/wAAAAD/v/7/AAD///+//v8fCQAA/7/+/x8JAAD//wAAAAAAAP///v8AAAAA//8AAB8JAAD//wAAHwn//////v8fCQAA///+/x8J/////wAAHwkAAP//AADf9v///78AAP//AAD/vwAA//////+/AADf9gAA/78AAN/2AAD///////8AAP//AAD//wAA/////9/2AAD/////3/YAAP//////////////////AAD/////3/b////////f9v////8AAP//////////////////AADf9v////8AAN/2AAD/////3/b////////f9gAA//8AAN/2/////1RVqqpUVaqqVFWqqlRVqqr/P/+//z//v/8//7//P/+/qqpUVaqqVFWqqlRVqqpUVf9//3//f/9//3//f/9//3//P/9//z//f/8//3//P/9//3//f/9//3//f/9//3//f/9/AAD/fwAA/38AAP9/AAD/f/7//3/+//9//v//f/7//3//v/9//7//f/+//3//v/9/////f////3////9/////f////3/+//9/////f/7//7//f/+//3//v/9//7//f/9//3//f/9//3//f/9//3//f/8//3//P/9//z//f/8/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_eo1ho")
+
 [sub_resource type="Environment" id="Environment_y1yr2"]
 background_color = Color(0.1566715, 0.15060753, 0, 1)
 background_energy_multiplier = 1.15
+ssr_fade_in = 0.29999983
+ssao_enabled = true
+ssao_radius = 1.5
+ssil_enabled = true
+ssil_intensity = 2.0
 glow_enabled = true
 glow_strength = 0.84
 glow_map_strength = 0.75
@@ -173,14 +212,16 @@ fog_density = 0.0306
 script = ExtResource("1_655on")
 
 [node name="Player" type="CharacterBody3D" parent="." unique_id=1751686325 groups=["Player"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2732663, 0)
 script = ExtResource("2_y1yr2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player" unique_id=1261033815]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.11874294, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3525777, 0)
+visible = false
 mesh = SubResource("CapsuleMesh_36q4r")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=2076338349]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.15230429, 0.1418519)
 shape = SubResource("CapsuleShape3D_wgn7g")
 
 [node name="Head" type="Node3D" parent="Player" unique_id=1136485411]
@@ -232,6 +273,9 @@ transform = Transform3D(2.0330846, 0, 0, 0, 3.425197e-16, 1.546718, 0, -1.542570
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Floor_001_0/Object_4/StaticBody3D" unique_id=1188336154]
 shape = SubResource("ConcavePolygonShape3D_655on")
 
+[node name="Pillar_004_1" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode" parent_id_path=PackedInt32Array(712112690, 353840853) index="1" unique_id=1892205688]
+transform = Transform3D(1.0000004, 0, 0, 0, 1, 0, 0, 1.0339758e-25, 1.0000004, -12.777169, 7.4216795e-19, 1.4641248)
+
 [node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Pillar_004_1/Object_6" parent_id_path=PackedInt32Array(712112690, 1224569864) index="0" unique_id=1730399922]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Pillar_004_1/Object_6/StaticBody3D" unique_id=494751720]
@@ -268,7 +312,10 @@ transform = Transform3D(1.0000002, -1.0339758e-25, 0, 0, 1, 0, 0, 0, 1.0000002, 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Wall (Connected)_001_6/Object_16/StaticBody3D" unique_id=1027632066]
 shape = SubResource("ConcavePolygonShape3D_xx1vg")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Mid Wood Panel_001_7/Object_18" parent_id_path=PackedInt32Array(712112690, 1641115036) index="0" unique_id=1979938848]
+[node name="Object_18" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Mid Wood Panel_001_7" parent_id_path=PackedInt32Array(712112690, 1774474299) index="0" unique_id=1641115036]
+transform = Transform3D(1.0000004, 5.684342e-14, -1.4573987e-21, 0, 1.0000004, -2.5410988e-21, -2.842171e-14, -1.6940659e-21, 1, 0.4058814, 0.81028605, -5.9604645e-08)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Mid Wood Panel_001_7/Object_18" index="0" unique_id=1979938848]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Mid Wood Panel_001_7/Object_18/StaticBody3D" unique_id=648242869]
 shape = SubResource("ConcavePolygonShape3D_x4tqr")
@@ -298,6 +345,9 @@ shape = SubResource("ConcavePolygonShape3D_nlhum")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_010_11/Object_26/StaticBody3D" unique_id=727275144]
 shape = SubResource("ConcavePolygonShape3D_iw3bm")
+
+[node name="Wall_chunk_012_12" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode" parent_id_path=PackedInt32Array(712112690, 353840853) index="12" unique_id=99075292]
+transform = Transform3D(-1.0000004, 0, 1.5099583e-07, 1.2325952e-32, 1, 0, -1.5099585e-07, 1.0339758e-25, -1.0000004, -17.373154, -0.01838217, 5.215782)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_012_12/Object_28" parent_id_path=PackedInt32Array(712112690, 1375632419) index="0" unique_id=365365192]
 
@@ -346,7 +396,10 @@ visible = false
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_011_15/Object_34/StaticBody3D" unique_id=255047499]
 shape = SubResource("ConcavePolygonShape3D_x5mx3")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Double Socket_001_16/Object_36" parent_id_path=PackedInt32Array(712112690, 1128930829) index="0" unique_id=73337854]
+[node name="Object_36" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Double Socket_001_16" parent_id_path=PackedInt32Array(712112690, 1616625198) index="0" unique_id=1128930829]
+transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 1, -0.6484184, 0, 1.2944727)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Double Socket_001_16/Object_36" index="0" unique_id=73337854]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Double Socket_001_16/Object_36/StaticBody3D" unique_id=1378378988]
 shape = SubResource("ConcavePolygonShape3D_grp0m")
@@ -369,209 +422,314 @@ shape = SubResource("ConcavePolygonShape3D_ihhod")
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19" parent_id_path=PackedInt32Array(712112690, 279790889) index="1" unique_id=11903482]
 transform = Transform3D(0.19736665, 0, 0, 0, 0.28401968, -3.4186387e-19, 0, -3.877409e-26, 0.32665807, 0, -0.07785666, 0)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D" unique_id=735788402]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.417)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D" unique_id=1768928682]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.128)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D/OmniLight3D" unique_id=684281466]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.206)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D" unique_id=580784079]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.282)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D" unique_id=158051151]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.171)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D" unique_id=1496435794]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.083)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D" unique_id=850954125]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.222)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D" unique_id=904017535]
 transform = Transform3D(1, 0, 0, 0, 1, 1.0339758e-25, 0, -1.5509636e-25, 1, 8.651979, -0.07785654, 0)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2" unique_id=1890776617]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.417)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2/OmniLight3D" unique_id=2007740350]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.128)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2/OmniLight3D/OmniLight3D" unique_id=180946569]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.206)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2/OmniLight3D/OmniLight3D/OmniLight3D" unique_id=1208385401]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.282)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D" unique_id=1595395908]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.171)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D" unique_id=92984156]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.083)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D" unique_id=1491792704]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.222)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2" unique_id=281829440]
 transform = Transform3D(1, 0, 0, 0, 1, 1.0339758e-25, 0, -1.5509636e-25, 1, 8.652, 0, 0)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2/OmniLight3D2" unique_id=32278721]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.417)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2/OmniLight3D2/OmniLight3D" unique_id=2024491392]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.128)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2/OmniLight3D2/OmniLight3D/OmniLight3D" unique_id=466503995]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.206)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2/OmniLight3D2/OmniLight3D/OmniLight3D/OmniLight3D" unique_id=661066448]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.282)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2/OmniLight3D2/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D" unique_id=568262033]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.171)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2/OmniLight3D2/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D" unique_id=1204943439]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.083)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2/OmniLight3D2/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D" unique_id=95010840]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.222)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2/OmniLight3D2" unique_id=1200240777]
 transform = Transform3D(1, 0, 0, 0, 1, 1.0339758e-25, 0, -1.5509636e-25, 1, 8.652, 0, 0)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2/OmniLight3D2/OmniLight3D2" unique_id=190987007]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.417)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2/OmniLight3D2/OmniLight3D2/OmniLight3D" unique_id=745716697]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.128)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2/OmniLight3D2/OmniLight3D2/OmniLight3D/OmniLight3D" unique_id=1350811024]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.206)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2/OmniLight3D2/OmniLight3D2/OmniLight3D/OmniLight3D/OmniLight3D" unique_id=135110368]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.282)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2/OmniLight3D2/OmniLight3D2/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D" unique_id=668251494]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.171)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2/OmniLight3D2/OmniLight3D2/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D" unique_id=1911749559]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.083)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/OmniLight3D/OmniLight3D2/OmniLight3D2/OmniLight3D2/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D/OmniLight3D" unique_id=1290897585]
 transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 0, 0, -5.222)
 light_energy = 1.792
+shadow_enabled = true
+shadow_blur = 2.881
+distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
 [node name="Object_44" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Icosphere_20" parent_id_path=PackedInt32Array(712112690, 1916536512) index="0" unique_id=1898265192]
 transform = Transform3D(1, 0, 5.5879354e-09, 0, 0.9999997, 1.6155871e-27, 0, 9.693523e-27, 0.99999976, 0, 2.3549979, 0)
 
-[node name="Node3D" type="Node3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode" parent_id_path=PackedInt32Array(712112690, 353840853) index="21" unique_id=311866775]
+[node name="outra_parede" type="Node3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode" parent_id_path=PackedInt32Array(712112690, 353840853) index="21" unique_id=311866775]
 transform = Transform3D(-4.3711427e-08, 0, -1.0000007, 0, 1, 0, 1.000001, 5.169879e-26, -4.3711417e-08, -8.078543, -5.3431463e-18, 8.976167)
 
-[node name="Object_16" type="MeshInstance3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Node3D" unique_id=1596494105]
+[node name="Object_16" type="MeshInstance3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/outra_parede" unique_id=1596494105]
 transform = Transform3D(1.0000002, -1.0339758e-25, 0, -5.169879e-26, 0.9999999, 0, 3.5527137e-15, 0, 1.0000001, 0, -0.023915572, -0.025280952)
 mesh = SubResource("ArrayMesh_x75nv")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Node3D/Object_16" unique_id=659731123]
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/outra_parede/Object_16" unique_id=659731123]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Node3D/Object_16/StaticBody3D" unique_id=1280263833]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/outra_parede/Object_16/StaticBody3D" unique_id=1280263833]
 shape = SubResource("ConcavePolygonShape3D_xx1vg")
+
+[node name="Pillar_004_2" type="Node3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode" parent_id_path=PackedInt32Array(712112690, 353840853) index="22" unique_id=2002769773]
+transform = Transform3D(1.0000007, 0, 0, 0, 1, 0, 0, 1.0339758e-25, 1.0000007, -13.457226, -2.0088054e-18, 6.0855966)
+
+[node name="Object_6" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Pillar_004_2" index="0"]
+mesh = SubResource("ArrayMesh_35vrp")
+
+[node name="CollisionShape3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Pillar_004_2/Object_6/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_y1yr2")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1206873405]
 environment = SubResource("Environment_y1yr2")
