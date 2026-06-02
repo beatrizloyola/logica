@@ -163,8 +163,10 @@ shadow_mesh = SubResource("ArrayMesh_m0di8")
 [sub_resource type="Environment" id="Environment_y1yr2"]
 background_color = Color(0.1566715, 0.15060753, 0, 1)
 background_energy_multiplier = 1.15
-fog_enabled = true
-fog_light_energy = 0.18
+glow_enabled = true
+glow_strength = 0.84
+glow_map_strength = 0.75
+fog_light_energy = 0.0
 fog_density = 0.0306
 
 [node name="Cena" type="Node3D" unique_id=1963229189]
@@ -316,11 +318,11 @@ transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 5.169879e-26, 1.0000001, 0,
 shape = SubResource("ConcavePolygonShape3D_kmwl1")
 
 [node name="Object_30" type="MeshInstance3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_013_13/Object_30" index="1" unique_id=630400658]
-transform = Transform3D(1.0000008, 0, 0, 0, 1, 0, 0, 1.0339758e-25, 1.0000008, 3.462049, -0.004116526, -3.8023703)
+transform = Transform3D(1.0000008, 0, 0, 0, 1, 0, 0, -5.169879e-26, 1.0000008, 3.6036344, 0.021936836, -3.8023696)
 mesh = SubResource("ArrayMesh_6eoo3")
 
 [node name="Object_30" type="MeshInstance3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_013_13/Object_30/Object_30" unique_id=200997340]
-transform = Transform3D(1.0000005, 0, 0, 0, 1, 5.169879e-26, 0, 5.169879e-26, 1.0000006, -0.11468589, -0.007086318, 1.9996476)
+transform = Transform3D(1.0000005, 0, 0, 0, 1, 5.169879e-26, 0, 5.169879e-26, 1.0000005, 0.19266415, -0.007086316, 1.9996474)
 mesh = SubResource("ArrayMesh_6eoo3")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_013_13/Object_30/Object_30/Object_30" unique_id=13798966]
@@ -563,7 +565,7 @@ transform = Transform3D(1, 0, 5.5879354e-09, 0, 0.9999997, 1.6155871e-27, 0, 9.6
 transform = Transform3D(-4.3711427e-08, 0, -1.0000007, 0, 1, 0, 1.000001, 5.169879e-26, -4.3711417e-08, -8.078543, -5.3431463e-18, 8.976167)
 
 [node name="Object_16" type="MeshInstance3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Node3D" unique_id=1596494105]
-transform = Transform3D(1.0000002, -1.0339758e-25, 0, 0, 1, 0, 0, 0, 1.0000002, 0, 0.02577062, -0.025280952)
+transform = Transform3D(1.0000002, -1.0339758e-25, 0, -5.169879e-26, 0.9999999, 0, 3.5527137e-15, 0, 1.0000001, 0, -0.023915572, -0.025280952)
 mesh = SubResource("ArrayMesh_x75nv")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Node3D/Object_16" unique_id=659731123]
