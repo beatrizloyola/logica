@@ -199,6 +199,8 @@ func criar_ui() -> void:
 	pause_panel.visible = false
 	ui_layer.add_child(pause_panel)
 
+	var fonte = load("res://assets/AnalogMono.ttf")
+
 	var vbox := VBoxContainer.new()
 	vbox.alignment = BoxContainer.ALIGNMENT_CENTER
 	vbox.add_theme_constant_override("separation", 20)
@@ -207,8 +209,9 @@ func criar_ui() -> void:
 	var title := Label.new()
 	title.text = "Pausado"
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	title.add_theme_font_size_override("font_size", 48)
-	title.modulate = Color(1, 1, 1)
+	title.add_theme_font_size_override("font_size", 64)
+	title.add_theme_font_override("font", fonte)
+	title.modulate = Color(1, 1, 0.4)
 	title.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	vbox.add_child(title)
 
@@ -216,19 +219,54 @@ func criar_ui() -> void:
 	spacer.custom_minimum_size = Vector2(0, 16)
 	vbox.add_child(spacer)
 
-	var btn_resume := Button.new()
-	btn_resume.text = "Voltar ao Jogo"
-	btn_resume.custom_minimum_size = Vector2(240, 50)
-	btn_resume.add_theme_font_size_override("font_size", 24)
+	var btn_resume := _criar_opcao_pausa(vbox, "Voltar ao Jogo", fonte)
 	btn_resume.pressed.connect(alternar_pause)
-	vbox.add_child(btn_resume)
 
-	var btn_quit := Button.new()
-	btn_quit.text = "Sair"
-	btn_quit.custom_minimum_size = Vector2(240, 50)
-	btn_quit.add_theme_font_size_override("font_size", 24)
+	var btn_quit := _criar_opcao_pausa(vbox, "Sair", fonte)
 	btn_quit.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/menu.tscn"))
-	vbox.add_child(btn_quit)
+
+	btn_resume.grab_focus()
+
+
+func _criar_opcao_pausa(parent: VBoxContainer, texto: String, fonte: Font) -> Button:
+	var hbox := HBoxContainer.new()
+	parent.add_child(hbox)
+
+	var arrow := Label.new()
+	arrow.text = ">"
+	arrow.add_theme_font_size_override("font_size", 36)
+	arrow.add_theme_font_override("font", fonte)
+	arrow.modulate = Color(1, 1, 0.4, 0)
+	arrow.custom_minimum_size = Vector2(30, 0)
+	arrow.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	hbox.add_child(arrow)
+
+	var btn := Button.new()
+	btn.text = texto
+	btn.flat = true
+	btn.custom_minimum_size = Vector2(260, 60)
+	btn.add_theme_font_size_override("font_size", 36)
+	btn.add_theme_font_override("font", fonte)
+
+	for est in ["normal", "hover", "pressed", "disabled", "focus"]:
+		btn.add_theme_stylebox_override(est, StyleBoxEmpty.new())
+
+	btn.mouse_entered.connect(btn.grab_focus)
+
+	btn.focus_entered.connect(func():
+		arrow.modulate = Color(1, 1, 0.4, 1)
+		for cor in ["font_color", "font_hover_color", "font_hover_pressed_color", "font_pressed_color", "font_focus_color", "font_disabled_color"]:
+			btn.add_theme_color_override(cor, Color(1, 1, 0.4))
+	)
+
+	btn.focus_exited.connect(func():
+		arrow.modulate = Color(1, 1, 0.4, 0)
+		for cor in ["font_color", "font_hover_color", "font_hover_pressed_color", "font_pressed_color", "font_focus_color", "font_disabled_color"]:
+			btn.remove_theme_color_override(cor)
+	)
+
+	hbox.add_child(btn)
+	return btn
 
 
 func adicionar_item(nome_do_item: String) -> void:
