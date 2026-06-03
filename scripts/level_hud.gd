@@ -22,7 +22,12 @@ func _ready() -> void:
 	_label.offset_top = 16
 	_label.add_theme_font_size_override("font_size", 20)
 	_label.add_theme_font_override("font", fonte)
-	_label.modulate = Color(1.0, 1.0, 0.4)
+	_label.add_theme_color_override("font_color", Color(1.0, 1.0, 0.4))
+	_label.add_theme_color_override("font_outline_color", Color(0, 0, 0, 0.85))
+	_label.add_theme_constant_override("outline_size", 3)
+	_label.add_theme_color_override("font_shadow_color", Color(0, 0, 0, 0.5))
+	_label.add_theme_constant_override("shadow_offset_x", 2)
+	_label.add_theme_constant_override("shadow_offset_y", 2)
 	_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(_label)
 
@@ -59,7 +64,7 @@ func _on_expression_updated(vars: Dictionary, _result: bool) -> void:
 
 func _on_solved() -> void:
 	_solved = true
-	_label.modulate = Color(0.4, 1.0, 0.4)
+	_label.add_theme_color_override("font_color", Color(0.4, 1.0, 0.4))
 	_update_display()
 
 
