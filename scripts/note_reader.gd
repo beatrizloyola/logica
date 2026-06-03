@@ -87,7 +87,7 @@ func collect_next() -> void:
 	_collected.append(item)
 	if item.is_tip:
 		note_collected.emit()
-	_current_index = 0
+	_current_index = _collected.size() - 1
 	_set_visible(true)
 	_show_current()
 
