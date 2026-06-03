@@ -21,12 +21,12 @@ height = 1.9208984
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d6um5"]
 resource_name = "Main"
 cull_mode = 2
-albedo_texture = ExtResource("6_kk6x8")
+albedo_texture = ExtResource("4_65psr")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 10.0
 emission_operator = 1
-emission_texture = ExtResource("7_go25i")
+emission_texture = ExtResource("5_tm27x")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ruh76"]
 _surfaces = [{
