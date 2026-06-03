@@ -12,6 +12,7 @@ const JUMP_VELOCITY := 4.5
 @onready var camera: Camera3D = $Head/Camera3D
 
 var is_paused := false
+var is_reading := false
 
 var ui_layer: CanvasLayer
 var center_dot: ColorRect
@@ -34,7 +35,7 @@ func _input(event: InputEvent) -> void:
 			alternar_pause()
 			return
 
-	if is_paused:
+	if is_paused or is_reading:
 		return
 
 	if event is InputEventMouseMotion:
@@ -100,7 +101,7 @@ func buscar_interagivel(node: Node) -> Node:
 
 
 func _physics_process(delta: float) -> void:
-	if is_paused:
+	if is_paused or is_reading:
 		velocity.x = 0
 		velocity.z = 0
 		move_and_slide()
@@ -212,3 +213,13 @@ func adicionar_item(nome_do_item: String) -> void:
 		print("Inventário atualizado: ", nome_do_item, " = ", inventario[nome_do_item])
 	else:
 		print("Item não existe no inventário: ", nome_do_item)
+
+
+func set_reading(value: bool) -> void:
+	is_reading = value
+	if value:
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		center_dot.visible = false
+	else:
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		center_dot.visible = true

@@ -13,6 +13,8 @@ signal state_changed(symbol: String, value: bool)
 
 var moving_part: Node3D
 var object_visible_when_on: Node
+var _color_mesh: MeshInstance3D
+var _material: StandardMaterial3D
 
 
 func _ready() -> void:
@@ -24,14 +26,26 @@ func _ready() -> void:
 	if object_visible_when_on_path != NodePath():
 		object_visible_when_on = get_node_or_null(object_visible_when_on_path)
 
+	_color_mesh = _find_mesh()
+	if _color_mesh != null:
+		_material = StandardMaterial3D.new()
+		_material.albedo_color = Color.RED
+		_color_mesh.material_override = _material
+
 	atualizar_visual()
+
+
+func _find_mesh() -> MeshInstance3D:
+	if moving_part is MeshInstance3D:
+		return moving_part
+	for child in get_children():
+		if child is MeshInstance3D:
+			return child
+	return null
 
 
 func interact(player) -> void:
 	is_on = not is_on
-
-	print(symbol, " = ", "V" if is_on else "F")
-
 	atualizar_visual()
 	state_changed.emit(symbol, is_on)
 
@@ -42,6 +56,9 @@ func atualizar_visual() -> void:
 
 	if object_visible_when_on != null:
 		object_visible_when_on.visible = is_on
+
+	if _material != null:
+		_material.albedo_color = Color.GREEN if is_on else Color.RED
 
 
 func get_logic_symbol() -> String:
