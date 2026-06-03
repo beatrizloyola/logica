@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://chpd0ebswkqxh"]
+[gd_scene format=4 uid="uid://cgnwvfb1g46vb"]
 
 [ext_resource type="PackedScene" uid="uid://c6ywwxqsutkyv" path="res://Metro_PSX/Models/Metro.glb" id="1_3n54i"]
 [ext_resource type="Texture2D" uid="uid://cq6xni6pttgn2" path="res://Metro_PSX/Models/Metro_Chair.png" id="2_nb5j2"]
@@ -119,6 +119,20 @@ albedo_color = Color(0.07058824, 0.07058824, 0.07058824, 1)
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_kl22a"]
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
+[sub_resource type="QuadMesh" id="QuadMesh_3n54i"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nb5j2"]
+cull_mode = 1
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_c8sub"]
+data = PackedVector3Array(0.5, -0.5, 0, -0.5, -0.5, 0, 0.5, 0.5, 0, -0.5, -0.5, 0, -0.5, 0.5, 0, 0.5, 0.5, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r7wj8"]
+albedo_texture = ExtResource("6_nb5j2")
+
+[sub_resource type="QuadMesh" id="QuadMesh_g6uqv"]
+size = Vector2(7, 5)
+
 [sub_resource type="Sky" id="Sky_p2gs8"]
 
 [sub_resource type="Environment" id="Environment_0i4mx"]
@@ -143,346 +157,345 @@ volumetric_fog_emission = Color(0.25929382, 0.25929365, 0.2592937, 1)
 volumetric_fog_ambient_inject = 0.36
 adjustment_brightness = 1.08
 
-[sub_resource type="QuadMesh" id="QuadMesh_3n54i"]
+[sub_resource type="BoxMesh" id="BoxMesh_g2jey"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nb5j2"]
-cull_mode = 1
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_tkbem"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_c8sub"]
-data = PackedVector3Array(0.5, -0.5, 0, -0.5, -0.5, 0, 0.5, 0.5, 0, -0.5, -0.5, 0, -0.5, 0.5, 0, 0.5, 0.5, 0)
+[node name="Scene" type="Node3D" unique_id=1312036616]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r7wj8"]
-albedo_texture = ExtResource("6_nb5j2")
-
-[sub_resource type="QuadMesh" id="QuadMesh_g6uqv"]
-size = Vector2(7, 5)
-
-[node name="Node3D" type="Node3D" unique_id=1312036616]
-
-[node name="Metro" parent="." unique_id=320336159 instance=ExtResource("1_3n54i")]
+[node name="Map" parent="." unique_id=320336159 instance=ExtResource("1_3n54i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1266.0671, 319.70563, 253.55272)
 
-[node name="St_01" parent="Metro" index="0" unique_id=256185057]
+[node name="St_01" parent="Map" index="0" unique_id=1391200221]
 transform = Transform3D(0, 0, -0.75644124, 0, 0.75644124, 0, -0.75644124, 0, 0, -1283.6279, -316.67554, -256.81583)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Metro/St_01" index="0" unique_id=1738753074]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/St_01" index="0" unique_id=1738753074]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Metro/St_01/StaticBody3D" unique_id=543710217]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/St_01/StaticBody3D" unique_id=543710217]
 shape = SubResource("ConcavePolygonShape3D_3n54i")
 
-[node name="subway_car" parent="Metro" index="1" unique_id=1018311279]
+[node name="subway_car" parent="Map" index="1" unique_id=1712307971]
 transform = Transform3D(-2.2345911e-07, 0, -1.8745109, 0, 1.8745109, 0, 1.8745109, 0, -2.2345911e-07, -1287.5211, -317.50494, -277.17966)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Metro/subway_car" index="0" unique_id=1298418595]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/subway_car" index="0" unique_id=1298418595]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Metro/subway_car/StaticBody3D" unique_id=856000429]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/subway_car/StaticBody3D" unique_id=856000429]
 shape = SubResource("ConcavePolygonShape3D_g6uqv")
 
-[node name="seats" parent="Metro" index="2" unique_id=1054235312]
+[node name="seats" parent="Map" index="2" unique_id=529991138]
 transform = Transform3D(-0.030703371, 0, 0, 0, -0.030703371, 0, 0, 0, -0.030703371, -1286.003, -318.48407, -280.71237)
 
-[node name="seats_001" parent="Metro" index="3" unique_id=127083009]
+[node name="seats_001" parent="Map" index="3" unique_id=646259718]
 transform = Transform3D(-0.030703371, 0, 0, 0, -0.030703371, 0, 0, 0, -0.030703371, -1286.003, -318.48407, -286.03082)
 
-[node name="Railing_V" parent="Metro" index="4" unique_id=1821021129]
+[node name="Railing_V" parent="Map" index="4" unique_id=1682314605]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1286.276, -317.1381, -280.67416)
 
-[node name="Railing_V_001" parent="Metro" index="5" unique_id=1965344340]
+[node name="Railing_V_001" parent="Map" index="5" unique_id=426131412]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1286.2296, -317.3216, -286.0253)
 
-[node name="seats_002" parent="Metro" index="6" unique_id=1934873762]
+[node name="seats_002" parent="Map" index="6" unique_id=235357158]
 transform = Transform3D(-0.030703371, 0, 0, 0, -0.030703371, 0, 0, 0, -0.030703371, -1286.003, -318.48407, -273.73834)
 
-[node name="Railing_V_002" parent="Metro" index="7" unique_id=53364936]
+[node name="Railing_V_002" parent="Map" index="7" unique_id=1205084262]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1286.276, -317.1381, -273.70016)
 
-[node name="seats_003" parent="Metro" index="8" unique_id=1599227658]
+[node name="seats_003" parent="Map" index="8" unique_id=1740262579]
 transform = Transform3D(-0.030703371, 0, 0, 0, -0.030703371, 0, 0, 0, -0.030703371, -1286.003, -318.48407, -268.32965)
 
-[node name="Railing_V_003" parent="Metro" index="9" unique_id=489335027]
+[node name="Railing_V_003" parent="Map" index="9" unique_id=720835728]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1286.2296, -317.3216, -268.32413)
 
-[node name="seats_004" parent="Metro" index="10" unique_id=1179134809]
+[node name="seats_004" parent="Map" index="10" unique_id=188876251]
 transform = Transform3D(0.030703371, 0, 0, 0, -0.030703371, 0, 0, 0, -0.030703371, -1289.0446, -318.48407, -280.71237)
 
-[node name="seats_005" parent="Metro" index="11" unique_id=1953570199]
+[node name="seats_005" parent="Map" index="11" unique_id=2033449751]
 transform = Transform3D(0.030703371, 0, 0, 0, -0.030703371, 0, 0, 0, -0.030703371, -1289.0446, -318.48407, -286.03082)
 
-[node name="Railing_V_004" parent="Metro" index="12" unique_id=841161853]
+[node name="Railing_V_004" parent="Map" index="12" unique_id=1001804456]
 transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, -1288.7716, -317.1381, -280.67416)
 
-[node name="Railing_V_005" parent="Metro" index="13" unique_id=1272946692]
+[node name="Railing_V_005" parent="Map" index="13" unique_id=1336287992]
 transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, -1288.818, -317.3216, -286.0253)
 
-[node name="seats_006" parent="Metro" index="14" unique_id=2118880062]
+[node name="seats_006" parent="Map" index="14" unique_id=1810797365]
 transform = Transform3D(0.030703371, 0, 0, 0, -0.030703371, 0, 0, 0, -0.030703371, -1289.0446, -318.48407, -273.73834)
 
-[node name="Railing_V_006" parent="Metro" index="15" unique_id=1833760977]
+[node name="Railing_V_006" parent="Map" index="15" unique_id=1551754584]
 transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, -1288.7716, -317.1381, -273.70016)
 
-[node name="seats_007" parent="Metro" index="16" unique_id=1816898153]
+[node name="seats_007" parent="Map" index="16" unique_id=510997947]
 transform = Transform3D(0.030703371, 0, 0, 0, -0.030703371, 0, 0, 0, -0.030703371, -1289.0446, -318.48407, -268.32965)
 
-[node name="Railing_V_007" parent="Metro" index="17" unique_id=874296056]
+[node name="Railing_V_007" parent="Map" index="17" unique_id=1457344574]
 transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, -1288.818, -317.3216, -268.32413)
 
-[node name="Railing_V_008" parent="Metro" index="18" unique_id=17855228]
+[node name="Railing_V_008" parent="Map" index="18" unique_id=74183810]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1287.5211, -316.17468, -273.30792)
 
-[node name="Railing_V_009" parent="Metro" index="19" unique_id=1744643343]
+[node name="Railing_V_009" parent="Map" index="19" unique_id=1178703381]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1287.5211, -316.17468, -281.0288)
 
-[node name="Door" parent="Metro" index="20" unique_id=805514127]
+[node name="Door" parent="Map" index="20" unique_id=1054005946]
 transform = Transform3D(0, 0, -0.7346244, 0, 1, 0, 1, 0, 0, -1289.3258, -317.66098, -284.99622)
 
-[node name="Glass_001" parent="Metro" index="21" unique_id=2132595561]
+[node name="Glass_001" parent="Map" index="21" unique_id=1077031111]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1289.3082, -317.26752, -286.74365)
 
-[node name="Door_001" parent="Metro" index="22" unique_id=1234963448]
+[node name="Door_001" parent="Map" index="22" unique_id=392493951]
 transform = Transform3D(0, 0, -0.7346244, 0, 1, 0, -1, 0, 0, -1289.3258, -317.66098, -283.36395)
 
-[node name="Door_002" parent="Metro" index="23" unique_id=329093103]
+[node name="Door_002" parent="Map" index="23" unique_id=1086014805]
 transform = Transform3D(0, 0, -0.7346244, 0, 1, 0, 1, 0, 0, -1289.3258, -317.66098, -277.99683)
 
-[node name="Door_003" parent="Metro" index="24" unique_id=655654099]
+[node name="Door_003" parent="Map" index="24" unique_id=496638810]
 transform = Transform3D(0, 0, -0.7346244, 0, 1, 0, -1, 0, 0, -1289.3258, -317.66098, -276.36456)
 
-[node name="Door_004" parent="Metro" index="25" unique_id=896547461]
+[node name="Door_004" parent="Map" index="25" unique_id=2065031258]
 transform = Transform3D(0, 0, -0.7346244, 0, 1, 0, 1, 0, 0, -1289.3258, -317.66098, -271.01102)
 
-[node name="Door_005" parent="Metro" index="26" unique_id=162068285]
+[node name="Door_005" parent="Map" index="26" unique_id=1176055929]
 transform = Transform3D(0, 0, -0.7346244, 0, 1, 0, -1, 0, 0, -1289.3258, -317.66098, -269.37878)
 
-[node name="Door_006" parent="Metro" index="27" unique_id=2115321472]
+[node name="Door_006" parent="Map" index="27" unique_id=360585786]
 transform = Transform3D(0, 0, -0.7346244, 0, 1, 0, 1, 0, 0, -1285.715, -317.66098, -284.99622)
 
-[node name="Door_007" parent="Metro" index="28" unique_id=1963097435]
+[node name="Door_007" parent="Map" index="28" unique_id=153814552]
 transform = Transform3D(0, 0, -0.7346244, 0, 1, 0, -1, 0, 0, -1285.715, -317.66098, -283.36395)
 
-[node name="Door_008" parent="Metro" index="29" unique_id=656785134]
+[node name="Door_008" parent="Map" index="29" unique_id=192673627]
 transform = Transform3D(0, 0, -0.7346244, 0, 1, 0, 1, 0, 0, -1285.715, -317.66098, -277.99683)
 
-[node name="Door_009" parent="Metro" index="30" unique_id=1309650817]
+[node name="Door_009" parent="Map" index="30" unique_id=1106363794]
 transform = Transform3D(0, 0, -0.7346244, 0, 1, 0, -1, 0, 0, -1285.715, -317.66098, -276.36456)
 
-[node name="Door_010" parent="Metro" index="31" unique_id=866132245]
+[node name="Door_010" parent="Map" index="31" unique_id=1791893799]
 transform = Transform3D(0, 0, -0.7346244, 0, 1, 0, 1, 0, 0, -1285.715, -317.66098, -271.5909)
 
-[node name="Door_011" parent="Metro" index="32" unique_id=1324431465]
+[node name="Door_011" parent="Map" index="32" unique_id=804848061]
 transform = Transform3D(0, 0, -0.7346244, 0, 1, 0, -1, 0, 0, -1285.715, -317.66098, -268.85648)
 
-[node name="Door_012" parent="Metro" index="33" unique_id=1428289806]
+[node name="Door_012" parent="Map" index="33" unique_id=758905110]
 transform = Transform3D(0, 0, -0.7346244, 0, 1, 0, -1, 0, 0, -1289.3258, -317.66098, -266.56125)
 
-[node name="Door_013" parent="Metro" index="34" unique_id=2075505585]
+[node name="Door_013" parent="Map" index="34" unique_id=412520307]
 transform = Transform3D(0, 0, -0.7346244, 0, 1, 0, -1, 0, 0, -1285.715, -317.66098, -266.56125)
 
-[node name="Glass_002" parent="Metro" index="35" unique_id=631193363]
+[node name="Glass_002" parent="Map" index="35" unique_id=549200655]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1289.3082, -317.26752, -280.1278)
 
-[node name="Glass_003" parent="Metro" index="36" unique_id=1942938393]
+[node name="Glass_003" parent="Map" index="36" unique_id=1347768531]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1289.3082, -317.26752, -273.14072)
 
-[node name="Glass_004" parent="Metro" index="37" unique_id=1082547839]
+[node name="Glass_004" parent="Map" index="37" unique_id=1588872396]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1289.3082, -317.26752, -268.3311)
 
-[node name="Glass_005" parent="Metro" index="38" unique_id=1971907580]
+[node name="Glass_005" parent="Map" index="38" unique_id=700840431]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1285.7103, -317.26752, -286.74365)
 
-[node name="Glass_006" parent="Metro" index="39" unique_id=443827602]
+[node name="Glass_006" parent="Map" index="39" unique_id=1764583708]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1285.7103, -317.26752, -280.1278)
 
-[node name="Glass_007" parent="Metro" index="40" unique_id=335598200]
+[node name="Glass_007" parent="Map" index="40" unique_id=1667034439]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1285.7103, -317.26752, -273.14072)
 
-[node name="Glass_012" parent="Metro" index="41" unique_id=323652562]
+[node name="Glass_012" parent="Map" index="41" unique_id=99476498]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1285.7103, -317.26752, -268.3311)
 
-[node name="Door_014" parent="Metro" index="42" unique_id=783971983]
+[node name="Door_014" parent="Map" index="42" unique_id=853950941]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.7346244, -1287.8986, -317.66098, -288.69324)
 
-[node name="Door_015" parent="Metro" index="43" unique_id=986699450]
+[node name="Door_015" parent="Map" index="43" unique_id=1162458608]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.7346244, -1287.8986, -317.66098, -265.65207)
 
-[node name="Glass_008" parent="Metro" index="44" unique_id=602889851]
+[node name="Glass_008" parent="Map" index="44" unique_id=1757076510]
 transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -1286.3309, -317.1083, -265.65732)
 surface_material_override/0 = SubResource("StandardMaterial3D_6rcer")
 
-[node name="Glass_009" parent="Metro" index="45" unique_id=1149088871]
+[node name="Glass_009" parent="Map" index="45" unique_id=717284408]
 transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -1288.7067, -317.1083, -265.63556)
 
-[node name="Glass_010" parent="Metro" index="46" unique_id=1536120965]
+[node name="Glass_010" parent="Map" index="46" unique_id=1567926393]
 transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -1286.3309, -317.1083, -288.68518)
 
-[node name="Glass_011" parent="Metro" index="47" unique_id=897837618]
+[node name="Glass_011" parent="Map" index="47" unique_id=147860278]
 transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -1288.7067, -317.1083, -288.68518)
 
-[node name="Column" parent="Metro" index="48" unique_id=1641422315]
+[node name="Column" parent="Map" index="48" unique_id=1972159193]
 transform = Transform3D(0, 0, -0.666506, 0, 0.75644124, 0, -0.66422653, 0, 0, -1283.2899, -316.52893, -278.42078)
 
-[node name="light" parent="Metro" index="49" unique_id=1961299137]
+[node name="light" parent="Map" index="49" unique_id=536375491]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1283.278, -314.1994, -267.20358)
 
-[node name="ticket_machine" parent="Metro" index="50" unique_id=2047114771]
+[node name="ticket_machine" parent="Map" index="50" unique_id=644132720]
 transform = Transform3D(-0.015160276, 0, 0.47449413, 0, 0.4747362, 0, -0.47449413, 0, -0.015160276, -1276.9808, -318.13937, -255.30783)
 
-[node name="trash_can" parent="Metro" index="51" unique_id=1666559717]
+[node name="trash_can" parent="Map" index="51" unique_id=1376310296]
 transform = Transform3D(0.87845796, 0, 0, 0, 0.87845796, 0, 0, 0, 0.87845796, -1277.1786, -318.4849, -265.5708)
 
-[node name="Chair" parent="Metro" index="52" unique_id=1968763271]
+[node name="Chair" parent="Map" index="52" unique_id=1174301234]
 transform = Transform3D(-0.007955018, 0, 1.1394601, 0, 1.1394877, 0, -1.1394601, 0, -0.007955018, -1277.2506, -318.50153, -263.67667)
 
-[node name="Vending_machine" parent="Metro" index="53" unique_id=1787246942]
+[node name="Vending_machine" parent="Map" index="53" unique_id=1367281157]
 transform = Transform3D(-0.0059288144, 0, 1.132307, 0, 1.1323225, 0, -1.132307, 0, -0.0059288144, -1277.035, -317.78586, -267.22)
 
-[node name="St" parent="Metro" index="54" unique_id=60982138]
+[node name="St" parent="Map" index="54" unique_id=253980128]
 transform = Transform3D(0, 0, -0.75644124, 0, 0.75644124, 0, -0.75644124, 0, 0, -1284.3052, -316.0339, -271.16913)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Metro/St" index="0" unique_id=1809885438]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/St" index="0" unique_id=1809885438]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Metro/St/StaticBody3D" unique_id=1588121450]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/St/StaticBody3D" unique_id=1588121450]
 shape = SubResource("ConcavePolygonShape3D_nb5j2")
 
-[node name="Door_A" parent="Metro" index="55" unique_id=939133253]
+[node name="Door_A" parent="Map" index="55" unique_id=1906991839]
 transform = Transform3D(-0.15958352, 0, -0.5506171, 0, 0.57327664, 0, 0.5506171, 0, -0.15958352, -1278.6285, -317.67178, -274.72144)
 
-[node name="Estruc" parent="Metro" index="56" unique_id=1370801105]
+[node name="Estruc" parent="Map" index="56" unique_id=442436750]
 transform = Transform3D(0, 0, -0.75644124, 0, 0.75644124, 0, -0.75644124, 0, 0, -1281.0106, -316.65448, -276.29437)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Metro/Estruc" index="0" unique_id=339364408]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/Estruc" index="0" unique_id=339364408]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Metro/Estruc/StaticBody3D" unique_id=421861376]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Estruc/StaticBody3D" unique_id=421861376]
 shape = SubResource("ConcavePolygonShape3D_hnnuc")
 
-[node name="Frame_01" parent="Metro" index="57" unique_id=1894056086]
+[node name="Frame_01" parent="Map" index="57" unique_id=1370829458]
 transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -1279.9525, -317.22906, -274.74097)
 
-[node name="Glass" parent="Metro" index="58" unique_id=1002808461]
+[node name="Glass" parent="Map" index="58" unique_id=1314403877]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1281.1141, -312.30692, -274.9193)
 
-[node name="St_03" parent="Metro" index="59" unique_id=122054759]
+[node name="St_03" parent="Map" index="59" unique_id=1021824947]
 transform = Transform3D(0, 0, -0.75644124, 0, 0.75644124, 0, -0.75644124, 0, 0, -1283.6198, -316.68033, -245.75638)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Metro/St_03" index="0" unique_id=1388998281]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/St_03" index="0" unique_id=1388998281]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Metro/St_03/StaticBody3D" unique_id=393174443]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/St_03/StaticBody3D" unique_id=393174443]
 shape = SubResource("ConcavePolygonShape3D_r7wj8")
 
-[node name="Stairs" parent="Metro" index="60" unique_id=1878598146]
+[node name="Stairs" parent="Map" index="60" unique_id=1275595444]
 transform = Transform3D(0, 0, -0.75644124, 0, 0.75644124, 0, -0.75644124, 0, 0, -1280.1488, -318.89517, -237.90424)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Metro/Stairs" index="0" unique_id=1373194740]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/Stairs" index="0" unique_id=1373194740]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Metro/Stairs/StaticBody3D" unique_id=1970914816]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Stairs/StaticBody3D" unique_id=1970914816]
 shape = SubResource("ConcavePolygonShape3D_hva3n")
 
-[node name="Stairs_01" parent="Metro" index="61" unique_id=1626506074]
+[node name="Stairs_01" parent="Map" index="61" unique_id=1919338071]
 transform = Transform3D(-0.75644124, 0, 0, 0, 0.75644124, 0, 0, 0, 0.75644124, -1272.6686, -311.79922, -216.81134)
 
-[node name="Railing" parent="Metro" index="62" unique_id=1205456881]
+[node name="Railing" parent="Map" index="62" unique_id=2013803013]
 transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -1273.0804, -308.28336, -216.77191)
 
-[node name="metro_map" parent="Metro" index="63" unique_id=1600137840]
+[node name="metro_map" parent="Map" index="63" unique_id=992818270]
 transform = Transform3D(0.029127752, 0, 0.64392185, 0, 0.6445802, 0, -0.64392185, 0, 0.029127752, -1276.6998, -316.7482, -263.6459)
 
-[node name="St_02" parent="Metro" index="64" unique_id=271087800]
+[node name="St_02" parent="Map" index="64" unique_id=600283483]
 transform = Transform3D(0, 0, -0.75644124, 0, 0.75644124, 0, -0.75644124, 0, 0, -1283.6031, -316.7043, -288.8959)
 
-[node name="automatic_ticket_gate" parent="Metro" index="65" unique_id=1733416933]
+[node name="automatic_ticket_gate" parent="Map" index="65" unique_id=419857929]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1304.7958, -318.13538, -297.1624)
 
-[node name="Door_A_01" parent="Metro" index="66" unique_id=1160875666]
+[node name="Door_A_01" parent="Map" index="66" unique_id=1129908591]
 transform = Transform3D(0, 0, 0.57327664, 0, 0.57327664, 0, -0.57327664, 0, 0, -1282.6742, -313.49365, -219.36484)
 
-[node name="Estruc_001" parent="Metro" index="67" unique_id=1135577883]
+[node name="Estruc_001" parent="Map" index="67" unique_id=1559536898]
 transform = Transform3D(-0.75644124, 0, 0, 0, 0.75644124, 0, 0, 0, 0.75644124, -1284.2472, -312.47638, -216.98251)
 
-[node name="Frame" parent="Metro" index="68" unique_id=1078911987]
+[node name="Frame" parent="Map" index="68" unique_id=626713373]
 transform = Transform3D(-1, 0, -3.2584137e-07, 0, 1, 0, 3.2584137e-07, 0, -1, -1282.691, -313.03903, -217.76859)
 
-[node name="Glass_01" parent="Metro" index="69" unique_id=280437731]
+[node name="Glass_01" parent="Map" index="69" unique_id=116047249]
 transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -1282.6752, -312.916, -217.83514)
 
-[node name="Poster_01" parent="Metro" index="70" unique_id=680669481]
+[node name="Poster_01" parent="Map" index="70" unique_id=340847398]
 transform = Transform3D(-0.009245776, 0, -1.0129024, 0, 1.0129446, 0, 1.0129024, 0, -0.009245776, -1276.7291, -315.98462, -260.01297)
 
-[node name="Poster_02" parent="Metro" index="71" unique_id=1972472756]
+[node name="Poster_02" parent="Map" index="71" unique_id=1447788018]
 transform = Transform3D(-0.009245776, 0, -1.0129024, 0, 1.0129446, 0, 1.0129024, 0, -0.009245776, -1276.7396, -315.98462, -258.8818)
 
-[node name="Poster_03" parent="Metro" index="72" unique_id=1142454893]
+[node name="Poster_03" parent="Map" index="72" unique_id=905985376]
 transform = Transform3D(-0.009245776, 0, -1.0129024, 0, 1.0129446, 0, 1.0129024, 0, -0.009245776, -1276.7504, -315.98462, -257.70816)
 
-[node name="Poster_04" parent="Metro" index="73" unique_id=192745554]
+[node name="Poster_04" parent="Map" index="73" unique_id=1317112799]
 transform = Transform3D(-0.009245776, 0, -1.0129024, 0, 1.0129446, 0, 1.0129024, 0, -0.009245776, -1276.7611, -315.98462, -256.5218)
 
-[node name="Poster_05" parent="Metro" index="74" unique_id=1425598181]
+[node name="Poster_05" parent="Map" index="74" unique_id=136247509]
 transform = Transform3D(-0.009245776, 0, -1.0129024, 0, 1.0129446, 0, 1.0129024, 0, -0.009245776, -1276.7291, -317.42947, -260.01297)
 
-[node name="Poster_06" parent="Metro" index="75" unique_id=652590723]
+[node name="Poster_06" parent="Map" index="75" unique_id=854298590]
 transform = Transform3D(-0.009245776, 0, -1.0129024, 0, 1.0129446, 0, 1.0129024, 0, -0.009245776, -1276.7394, -317.42947, -258.90613)
 
-[node name="Poster_07" parent="Metro" index="76" unique_id=492802576]
+[node name="Poster_07" parent="Map" index="76" unique_id=1407129533]
 transform = Transform3D(-0.009245776, 0, -1.0129024, 0, 1.0129446, 0, 1.0129024, 0, -0.009245776, -1276.7506, -317.42947, -257.6654)
 
-[node name="Poster_08" parent="Metro" index="77" unique_id=1424698635]
+[node name="Poster_08" parent="Map" index="77" unique_id=283098704]
 transform = Transform3D(-0.009245776, 0, -1.0129024, 0, 1.0129446, 0, 1.0129024, 0, -0.009245776, -1276.7609, -317.42947, -256.54697)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Metro" unique_id=1101327056]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1273.8818, -305.58673, -235.50084)
-
-[node name="Chair2" type="MeshInstance3D" parent="Metro" unique_id=2084484821]
+[node name="Chair2" type="MeshInstance3D" parent="Map" unique_id=2084484821]
 transform = Transform3D(-0.03177656, 0, 1.1390448, 0, 1.1394879, 0, -1.1390448, 0, -0.03177656, -1277.2032, -318.50717, -261.39685)
 mesh = SubResource("ArrayMesh_6ls06")
 
-[node name="light2" type="MeshInstance3D" parent="Metro" unique_id=1350212187]
+[node name="light2" type="MeshInstance3D" parent="Map" unique_id=1350212187]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1283.2811, -314.2151, -242.30042)
 mesh = SubResource("ArrayMesh_xs7cy")
 
-[node name="light3" type="MeshInstance3D" parent="Metro" unique_id=1909300613]
+[node name="light3" type="MeshInstance3D" parent="Map" unique_id=1909300613]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1283.278, -314.1994, -248.86887)
 mesh = SubResource("ArrayMesh_xs7cy")
 
-[node name="light4" type="MeshInstance3D" parent="Metro" unique_id=129299018]
+[node name="light4" type="MeshInstance3D" parent="Map" unique_id=129299018]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1283.278, -314.1994, -260.7615)
 mesh = SubResource("ArrayMesh_xs7cy")
 
-[node name="light5" type="MeshInstance3D" parent="Metro" unique_id=1962726912]
+[node name="light5" type="MeshInstance3D" parent="Map" unique_id=1962726912]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1283.278, -314.1994, -254.99747)
 mesh = SubResource("ArrayMesh_xs7cy")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1919584147]
-transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, -17.985088, 1.2043388, -41.480606)
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Map" unique_id=1919584147]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, -1284.0522, -318.50128, -295.03333)
 mesh = SubResource("QuadMesh_0i4mx")
 surface_material_override/0 = SubResource("StandardMaterial3D_1oc2e")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1276950845]
-transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, -26.665565, 1.9125137, 29.250381)
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Map" unique_id=1276950845]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, -1292.7327, -317.79312, -224.30234)
 mesh = SubResource("BoxMesh_ark67")
 surface_material_override/0 = SubResource("StandardMaterial3D_1oc2e")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D2" unique_id=2094832541]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/MeshInstance3D2" unique_id=2094832541]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D2/StaticBody3D" unique_id=1922169493]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/MeshInstance3D2/StaticBody3D" unique_id=1922169493]
 shape = SubResource("ConcavePolygonShape3D_kl22a")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Map" unique_id=2050992756]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1266.0671, -319.70563, -253.55272)
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Map" unique_id=464337889]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -1280.6144, -317.86908, -281.21512)
+mesh = SubResource("QuadMesh_3n54i")
+surface_material_override/0 = SubResource("StandardMaterial3D_nb5j2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/MeshInstance3D4" unique_id=682105243]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/MeshInstance3D4/StaticBody3D" unique_id=2102778764]
+shape = SubResource("ConcavePolygonShape3D_c8sub")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Map" unique_id=1259509207]
+transform = Transform3D(1, 0, 0, 0, -0.00413638, -0.9999914, 0, 0.9999914, -0.00413638, -1280.7563, -314.22665, -277.10712)
+material_override = SubResource("StandardMaterial3D_r7wj8")
+mesh = SubResource("QuadMesh_g6uqv")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=244664610]
 environment = SubResource("Environment_0i4mx")
 
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=2050992756]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1194930000]
+transform = Transform3D(5.136047, 0, 0, 0, 4.708821, 0, 0, 0, 1, -13.998263, 2.7990108, 14.291043)
+visible = false
+mesh = SubResource("BoxMesh_g2jey")
 
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="." unique_id=464337889]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -14.547212, 1.8365532, -27.662395)
-mesh = SubResource("QuadMesh_3n54i")
-surface_material_override/0 = SubResource("StandardMaterial3D_nb5j2")
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=1957011485]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D4" unique_id=682105243]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=731460793]
+shape = SubResource("ConcavePolygonShape3D_tkbem")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D4/StaticBody3D" unique_id=2102778764]
-shape = SubResource("ConcavePolygonShape3D_c8sub")
-
-[node name="MeshInstance3D5" type="MeshInstance3D" parent="." unique_id=1259509207]
-transform = Transform3D(1, 0, 0, 0, -0.00413638, -0.9999914, 0, 0.9999914, -0.00413638, -14.689161, 5.478977, -23.554407)
-material_override = SubResource("StandardMaterial3D_r7wj8")
-mesh = SubResource("QuadMesh_g6uqv")
-
-[editable path="Metro"]
+[editable path="Map"]
