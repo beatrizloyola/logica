@@ -21,19 +21,19 @@ func _ready() -> void:
 
 	var vbox := VBoxContainer.new()
 	vbox.alignment = BoxContainer.ALIGNMENT_BEGIN
-	vbox.add_theme_constant_override("separation", 24)
+	vbox.add_theme_constant_override("separation", 8)
 	center.add_child(vbox)
 
 	var title := Label.new()
 	title.text = "∉xit"
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
-	title.add_theme_font_size_override("font_size", 120)
+	title.add_theme_font_size_override("font_size", 80)
 	title.add_theme_font_override("font", fonte)
 	title.modulate = Color(1, 1, 0.4)
 	vbox.add_child(title)
 
 	var sep := Control.new()
-	sep.custom_minimum_size = Vector2(0, 24)
+	sep.custom_minimum_size = Vector2(0, 8)
 	vbox.add_child(sep)
 
 	_add_credit(vbox, "Mapa", "Pedro Bedor, Daniel Donaire e Juan Riquelme", fonte)
@@ -41,7 +41,7 @@ func _ready() -> void:
 	_add_credit(vbox, "Scripting", "Victor Carraly e Beatriz Loyola", fonte)
 
 	var sep2 := Control.new()
-	sep2.custom_minimum_size = Vector2(0, 32)
+	sep2.custom_minimum_size = Vector2(0, 16)
 	vbox.add_child(sep2)
 
 	var btn_restart := _criar_opcao(vbox, "Jogar Novamente", fonte)
