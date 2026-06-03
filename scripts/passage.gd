@@ -47,4 +47,4 @@ func open() -> void:
 
 func _on_trigger_entered(body: Node3D) -> void:
 	if body.is_in_group("Player") and next_scene != "":
-		get_tree().change_scene_to_file(next_scene)
+		Transition.go_to(next_scene)
