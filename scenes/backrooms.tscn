@@ -707,7 +707,7 @@ shape = SubResource("BoxShape3D_x4tqr")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -18)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="PassageWall" unique_id=264694025]
-transform = Transform3D(10, 0, 0, 0, 3, 0, 0, 0, 0.3, 0, 0, -1.8969498)
+transform = Transform3D(10, 0, 0, 0, 3, 0, 0, 0, 0.3, 0, 0, -2.578783)
 mesh = SubResource("BoxMesh_wmxy6")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="PassageWall" unique_id=619942606]
@@ -715,7 +715,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.5449924)
 shape = SubResource("BoxShape3D_7gp3u")
 
 [node name="PassageTrigger" type="Area3D" parent="." unique_id=1766811406]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -17.858738)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -20.831858)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="PassageTrigger" unique_id=1661675214]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5551969, 0)
