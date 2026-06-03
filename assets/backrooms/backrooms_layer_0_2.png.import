@@ -2,24 +2,23 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b16feqyswblxk"
-path.s3tc="res://.godot/imported/backrooms_layer_0_1.png-7f1352dbadaeacd414c46a4e88a42fed.s3tc.ctex"
+uid="uid://bnpyhl5rhquka"
+path="res://.godot/imported/backrooms_layer_0_2.png-0e1bbd2fbb281a631067f6d2def557df.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 generator_parameters={
-"md5": "57e85d43cd7e2df7f77ed6616a25b32a"
+"md5": "5e1ec5e42e508f7373b81b826ed6536b"
 }
 
 [deps]
 
-source_file="res://assets/lvl0/backrooms_layer_0_1.png"
-dest_files=["res://.godot/imported/backrooms_layer_0_1.png-7f1352dbadaeacd414c46a4e88a42fed.s3tc.ctex"]
+source_file="res://assets/backrooms/backrooms_layer_0_2.png"
+dest_files=["res://.godot/imported/backrooms_layer_0_2.png-0e1bbd2fbb281a631067f6d2def557df.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -41,4 +40,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

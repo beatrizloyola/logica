@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://hgbh1ahcxpfe"
-path="res://.godot/imported/backrooms_layer_0.glb-c311466279faeda8bb22eca310dac000.scn"
+path="res://.godot/imported/backrooms_layer_0.glb-74f23c9b3ef3d5a2e4c46cf8e5b0ffe8.scn"
 
 [deps]
 
-source_file="res://assets/lvl0/backrooms_layer_0.glb"
-dest_files=["res://.godot/imported/backrooms_layer_0.glb-c311466279faeda8bb22eca310dac000.scn"]
+source_file="res://assets/backrooms/backrooms_layer_0.glb"
+dest_files=["res://.godot/imported/backrooms_layer_0.glb-74f23c9b3ef3d5a2e4c46cf8e5b0ffe8.scn"]
 
 [params]
 
