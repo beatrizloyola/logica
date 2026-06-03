@@ -25,7 +25,7 @@ func _ready() -> void:
 	center.add_child(vbox)
 
 	var title := Label.new()
-	title.text = "E X I T"
+	title.text = "∉xit"
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
 	title.add_theme_font_size_override("font_size", 120)
 	title.add_theme_font_override("font", fonte)
