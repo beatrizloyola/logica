@@ -181,8 +181,9 @@ data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0
 size = Vector3(9.711548, 2.8973389, 0.62976074)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_65psr"]
+emission_enabled = true
 emission = Color(1, 1, 1, 1)
-emission_energy_multiplier = 3.51
+emission_energy_multiplier = 0.0
 
 [sub_resource type="BoxMesh" id="BoxMesh_v8jcj"]
 material = SubResource("StandardMaterial3D_65psr")
