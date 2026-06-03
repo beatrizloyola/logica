@@ -14,6 +14,7 @@
 [ext_resource type="ArrayMesh" uid="uid://b7ae5dslb6xgd" path="res://assets/bathroom/OBJs/sink_grime/sink_grime.obj" id="10_xd8h1"]
 [ext_resource type="PackedScene" uid="uid://f8ithsd6gnhy" path="res://assets/bathroom/FBXs/mirror.fbx" id="11_xd8h1"]
 [ext_resource type="PackedScene" uid="uid://c2tr7cjvfnkmr" path="res://assets/bathroom/FBXs/bin.fbx" id="13_pfrnn"]
+[ext_resource type="PackedScene" uid="uid://dl7a3elat2mel" path="res://assets/bathroom/FBXs/grate.fbx" id="14_8qybg"]
 [ext_resource type="ArrayMesh" uid="uid://c5t8d62ih21tu" path="res://assets/bathroom/OBJs/bin/bin.obj" id="14_68odq"]
 [ext_resource type="PackedScene" uid="uid://yyyk30bip26i" path="res://assets/bathroom/FBXs/stall_closed.fbx" id="15_bvfcl"]
 [ext_resource type="PackedScene" uid="uid://cxtmc2fbpmv4w" path="res://assets/bathroom/FBXs/toilet.fbx" id="16_ycb2m"]
@@ -111,7 +112,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.8068404)
 
 [node name="floor4x4_2" parent="Floor" unique_id=974323096 instance=ExtResource("1_j2cwc")]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.039507, 0, 14.784557)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.799002, 0, 14.784557)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Floor/floor4x4_2" unique_id=1136233798]
 transform = Transform3D(3.4220564, 0, 0, 0, 1, 0, 0, 0, 3.284932, 25.400919, 0, -37.77211)
@@ -125,29 +126,29 @@ shape = SubResource("ConcavePolygonShape3D_3ouov")
 
 [node name="floor4x4_8" parent="Floor" unique_id=393233749 instance=ExtResource("1_j2cwc")]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.039507, 0, 6.784557)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.799002, 0, 6.784557)
 
 [node name="floor4x4_10" parent="Floor" unique_id=1222135791 instance=ExtResource("1_j2cwc")]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.932255, 0, 14.811394)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.17276, 0, 14.811394)
 
 [node name="floor4x4_13" parent="Floor" unique_id=1097674008 instance=ExtResource("1_j2cwc")]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0677452, 0, 14.811394)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.82724, 0, 14.811394)
 
 [node name="floor4x4_15" parent="Floor" unique_id=1024028188 instance=ExtResource("1_j2cwc")]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0677452, 0, 6.811394)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.82724, 0, 6.811394)
 
 [node name="floor4x4_16" parent="Floor" unique_id=909936772 instance=ExtResource("1_j2cwc")]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.932255, 0, 6.811394)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.17276, 0, 6.811394)
 
 [node name="Walls" type="Node3D" parent="." unique_id=103208871]
 transform = Transform3D(1, 0, 0, 0, 1.6217687, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="wall1" parent="Walls" unique_id=83873334 instance=ExtResource("3_qfxnf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12296867, 0, 9)
 
 [node name="wall1" parent="Walls/wall1" unique_id=293806650 instance=ExtResource("3_qfxnf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
@@ -331,13 +332,13 @@ transform = Transform3D(-0.9999999, 0, -9.952215e-08, 0, 0.97790325, 0, 8.742277
 transform = Transform3D(-4.3711374e-08, 0, 1.1384007, 0, 0.97790325, 0, -0.99999976, 0, -4.9761077e-08, -20.516151, 0.13670215, -25.559837)
 
 [node name="floor4x4_8" parent="Walls/wall?2/wall?2" unique_id=459745997 instance=ExtResource("1_j2cwc")]
-transform = Transform3D(0.99999976, 0, 0, 0, 0.9999998, 0, 0, 0, 1, -8.640693, -0.28258288, 19.66298)
+transform = Transform3D(0.99999976, 0, 0, 0, 0.9999998, 0, 0, 0, 1, -8.640692, -0.28258288, 19.84877)
 
 [node name="wall?2" parent="Walls/wall?2/wall?2" unique_id=318055549 instance=ExtResource("3_qfxnf")]
 transform = Transform3D(-0.99999964, 0, -9.9522126e-08, 0, 0.97790325, 0, 8.7422734e-08, 0, -1.1384004, -46.579792, -0.08951348, -4.7511177)
 
 [node name="floor4x4_9" parent="Walls/wall?2/wall?2" unique_id=1057726944 instance=ExtResource("1_j2cwc")]
-transform = Transform3D(0.99999976, 0, 0, 0, 0.9999998, 0, 0, 0, 1, -8.64069, -0.28258288, 11.750919)
+transform = Transform3D(0.99999976, 0, 0, 0, 0.9999998, 0, 0, 0, 1, -8.640689, -0.28258288, 11.860651)
 
 [node name="wall?3" parent="Walls/wall?2" unique_id=1712684431 instance=ExtResource("3_qfxnf")]
 transform = Transform3D(-4.3711374e-08, 0, 1.1384007, 0, 0.97790325, 0, -0.99999976, 0, -4.9761077e-08, -18.623205, 0.13670215, -25.559837)
@@ -400,6 +401,9 @@ distance_fade_length = 1388.85
 
 [node name="ceiling_4x9" parent="Walls/wall?2" unique_id=1976689699 instance=ExtResource("5_3ouov")]
 transform = Transform3D(1, 0, -7.1054274e-15, 0, -0.9999997, 8.742275e-08, 6.3948846e-14, -8.742275e-08, -0.99999964, 0.7418814, 2.513, -25.2)
+
+[node name="floor4x4_8" parent="Walls/wall?2" unique_id=1914689729 instance=ExtResource("1_j2cwc")]
+transform = Transform3D(0.99999976, 0, 2.1316282e-14, 0, 0.9999998, 0, 7.1054274e-15, 0, 0.99999976, 1.4811459, -0.16177258, 3.4140444)
 
 [node name="Player" type="CharacterBody3D" parent="." unique_id=933034782 groups=["Player"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.830381, 1.0726764, -2.2500057)
@@ -676,13 +680,19 @@ mesh = ExtResource("14_68odq")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Clutter/bin2/MeshInstance3D/StaticBody3D" unique_id=1685037285]
 shape = SubResource("ConcavePolygonShape3D_7pmh0")
 
+[node name="grate" parent="Clutter" unique_id=1257676812 instance=ExtResource("14_8qybg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.9154177, 0, -9.041888)
+
+[node name="grate2" parent="Clutter" unique_id=369600502 instance=ExtResource("14_8qybg")]
+transform = Transform3D(0.9261144, 0, -0.37724283, 0, 1, 0, 0.37724283, 0, 0.9261144, 1.6599436, 0, -6.130728)
+
 [node name="sink_area" type="Node3D" parent="." unique_id=1784096693]
 
 [node name="sink1" type="Node3D" parent="sink_area" unique_id=1416604713]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.051086426, 0, 3)
 
 [node name="sink_grime" parent="sink_area/sink1" unique_id=586602590 instance=ExtResource("9_ym42y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -17.2)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19362259, 0, -17.2)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="sink_area/sink1/sink_grime" unique_id=2084354717]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12.256935)
@@ -695,13 +705,13 @@ mesh = ExtResource("10_xd8h1")
 shape = SubResource("ConcavePolygonShape3D_2v03t")
 
 [node name="soap" parent="sink_area/sink1" unique_id=245880769 instance=ExtResource("10_n5w2q")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4, 1, -18.569)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.3043065, 1, -18.569)
 
 [node name="mirror" parent="sink_area/sink1" unique_id=459495721 instance=ExtResource("11_xd8h1")]
-transform = Transform3D(1, 0, 0, 0, 1.1667329, 0, 0, 0, 1.600148, -9.042862, 0.6850172, -19.052382)
+transform = Transform3D(1, 0, 0, 0, 1.1667329, 0, 0, 0, 1.600148, -8.947168, 0.6850172, -19.052382)
 
 [node name="sink_grime2" parent="sink_area/sink1" unique_id=1614331059 instance=ExtResource("9_ym42y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16.441)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19362259, 0, -16.441)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="sink_area/sink1/sink_grime2" unique_id=1780103186]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12.256935)
@@ -714,7 +724,7 @@ mesh = ExtResource("10_xd8h1")
 shape = SubResource("ConcavePolygonShape3D_2v03t")
 
 [node name="sink_grime3" parent="sink_area/sink1" unique_id=453568143 instance=ExtResource("9_ym42y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -15.641)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19362259, 0, -15.641)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="sink_area/sink1/sink_grime3" unique_id=819338289]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12.256935)
@@ -730,7 +740,7 @@ shape = SubResource("ConcavePolygonShape3D_2v03t")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12)
 
 [node name="sink_grime" parent="sink_area/sink2" unique_id=1812624389 instance=ExtResource("9_ym42y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -17.2)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19362259, 0, -17.2)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="sink_area/sink2/sink_grime" unique_id=1767048795]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12.256935)
@@ -743,13 +753,13 @@ mesh = ExtResource("10_xd8h1")
 shape = SubResource("ConcavePolygonShape3D_2v03t")
 
 [node name="soap" parent="sink_area/sink2" unique_id=1874001342 instance=ExtResource("10_n5w2q")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4, 1, -18.569)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.3043065, 1, -18.569)
 
 [node name="mirror" parent="sink_area/sink2" unique_id=288451154 instance=ExtResource("11_xd8h1")]
-transform = Transform3D(1, 0, 0, 0, 1.1667329, 0, 0, 0, 1.600148, -9.042862, 0.6850172, -19.052382)
+transform = Transform3D(1, 0, 0, 0, 1.1667329, 0, 0, 0, 1.600148, -8.947168, 0.6850172, -19.052382)
 
 [node name="sink_grime2" parent="sink_area/sink2" unique_id=722995582 instance=ExtResource("9_ym42y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16.441)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19362259, 0, -16.441)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="sink_area/sink2/sink_grime2" unique_id=298334450]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12.256935)
@@ -762,7 +772,7 @@ mesh = ExtResource("10_xd8h1")
 shape = SubResource("ConcavePolygonShape3D_2v03t")
 
 [node name="sink_grime3" parent="sink_area/sink2" unique_id=1541405381 instance=ExtResource("9_ym42y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -15.641)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19362259, 0, -15.641)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="sink_area/sink2/sink_grime3" unique_id=83713438]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12.256935)
@@ -791,7 +801,7 @@ shape = SubResource("ConcavePolygonShape3D_7pmh0")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.5)
 
 [node name="sink_grime" parent="sink_area/sink3" unique_id=1580100472 instance=ExtResource("9_ym42y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -17.2)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19362259, 0, -17.2)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="sink_area/sink3/sink_grime" unique_id=1589904932]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12.256935)
@@ -804,13 +814,13 @@ mesh = ExtResource("10_xd8h1")
 shape = SubResource("ConcavePolygonShape3D_2v03t")
 
 [node name="soap" parent="sink_area/sink3" unique_id=114250795 instance=ExtResource("10_n5w2q")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4, 1, -18.569)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.3043065, 1, -18.569)
 
 [node name="mirror" parent="sink_area/sink3" unique_id=1277934915 instance=ExtResource("11_xd8h1")]
-transform = Transform3D(1, 0, 0, 0, 1.1667329, 0, 0, 0, 1.600148, -9.042862, 0.6850172, -19.052382)
+transform = Transform3D(1, 0, 0, 0, 1.1667329, 0, 0, 0, 1.600148, -8.947168, 0.6850172, -19.052382)
 
 [node name="sink_grime2" parent="sink_area/sink3" unique_id=31067317 instance=ExtResource("9_ym42y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16.441)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19362259, 0, -16.441)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="sink_area/sink3/sink_grime2" unique_id=1321453433]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12.256935)
@@ -823,7 +833,7 @@ mesh = ExtResource("10_xd8h1")
 shape = SubResource("ConcavePolygonShape3D_2v03t")
 
 [node name="sink_grime3" parent="sink_area/sink3" unique_id=31117445 instance=ExtResource("9_ym42y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -15.641)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19362259, 0, -15.641)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="sink_area/sink3/sink_grime3" unique_id=347282586]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12.256935)
