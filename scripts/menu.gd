@@ -61,6 +61,7 @@ func _criar_opcao(parent: VBoxContainer, texto: String, fonte: Font) -> Button:
 	var btn := Button.new()
 	btn.text = texto
 	btn.flat = true
+	btn.alignment = HORIZONTAL_ALIGNMENT_LEFT
 	btn.custom_minimum_size = Vector2(280, 70)
 	btn.add_theme_font_size_override("font_size", 42)
 	btn.add_theme_font_override("font", fonte)

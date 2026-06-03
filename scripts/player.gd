@@ -245,6 +245,7 @@ func _criar_opcao_pausa(parent: VBoxContainer, texto: String, fonte: Font) -> Bu
 	var btn := Button.new()
 	btn.text = texto
 	btn.flat = true
+	btn.alignment = HORIZONTAL_ALIGNMENT_LEFT
 	btn.custom_minimum_size = Vector2(260, 60)
 	btn.add_theme_font_size_override("font_size", 36)
 	btn.add_theme_font_override("font", fonte)
