@@ -101,7 +101,7 @@ data = PackedVector3Array(-23.8603, 2.3999999, 23.1472, -23.8603, 2.1631, 23.147
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_65psr"]
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
-emission_energy_multiplier = 16.0
+emission_energy_multiplier = 2.34
 
 [sub_resource type="BoxMesh" id="BoxMesh_bh1vf"]
 material = SubResource("StandardMaterial3D_65psr")
@@ -158,7 +158,7 @@ metadata/_custom_type_script = "uid://ciauqs7ueoib"
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_occwe"]
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
-[node name="Scene" type="Node3D" unique_id=1350423565]
+[node name="Scene2" type="Node3D" unique_id=1350423565]
 
 [node name="Player" type="CharacterBody3D" parent="." unique_id=933034782 groups=["Player"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.830381, 1.0726764, -2.2500057)
@@ -635,7 +635,7 @@ shape = SubResource("ConcavePolygonShape3D_hq5ij")
 [node name="Sketchfab_Scene" parent="Map/Clutter" unique_id=1404450160 instance=ExtResource("9_0s8rv")]
 transform = Transform3D(-6.5567085e-09, 0, -0.15, 0, 0.15, 0, 0.15, 0, -6.5567085e-09, 14.358412, 1.6577338, -15.020371)
 
-[node name="Skeleton3D" parent="Map/Clutter/Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Armature_47/GLTF_created_0" parent_id_path=PackedInt32Array(1404450160, 1546500279) index="0" unique_id=1581098747]
+[node name="Skeleton3D" parent="Map/Clutter/Sketchfab_Scene/Sketchfab_model/root/GLTF_SceneRootNode/Armature_47/GLTF_created_0" parent_id_path=PackedInt32Array(1404450160, 904556806) index="0" unique_id=1222587955]
 bones/1/rotation = Quaternion(0.09898638, -8.3351216e-19, -2.8977933e-17, 0.9950889)
 bones/2/rotation = Quaternion(0.08864664, 1.1874002e-07, 1.056751e-08, 0.9960632)
 bones/3/rotation = Quaternion(0.13995466, 1.1803599e-07, 5.0051696e-08, 0.990158)
