@@ -21,6 +21,7 @@ func _ready() -> void:
 
 
 func _build_ui() -> void:
+	var fonte = load("res://assets/AnalogMono.ttf")
 	_bg = ColorRect.new()
 	_bg.set_anchors_preset(Control.PRESET_FULL_RECT)
 	_bg.color = Color(0, 0, 0, 0.45)
@@ -59,6 +60,7 @@ func _build_ui() -> void:
 	_text_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	_text_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	_text_label.add_theme_font_size_override("font_size", 28)
+	_text_label.add_theme_font_override("font", fonte)
 	_text_label.modulate = Color(0.1, 0.1, 0.1)
 	_text_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(_text_label)
@@ -70,6 +72,7 @@ func _build_ui() -> void:
 	_counter_label.anchor_bottom = 0.96
 	_counter_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	_counter_label.add_theme_font_size_override("font_size", 16)
+	_counter_label.add_theme_font_override("font", fonte)
 	_counter_label.modulate = Color(1, 1, 1, 0.75)
 	_counter_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(_counter_label)

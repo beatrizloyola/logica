@@ -12,6 +12,7 @@ var _solved := false
 
 
 func _ready() -> void:
+	var fonte = load("res://assets/AnalogMono.ttf")
 	_label = Label.new()
 	_label.anchor_left = 0.0
 	_label.anchor_right = 0.0
@@ -20,6 +21,7 @@ func _ready() -> void:
 	_label.offset_left = 16
 	_label.offset_top = 16
 	_label.add_theme_font_size_override("font_size", 20)
+	_label.add_theme_font_override("font", fonte)
 	_label.modulate = Color(1.0, 1.0, 0.4)
 	_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(_label)
