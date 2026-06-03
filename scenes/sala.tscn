@@ -236,7 +236,7 @@ shape = SubResource("BoxShape3D_rssmv")
 [node name="Passage" type="Node3D" parent="." unique_id=751488296]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.822237, 0.11907065, 12.566616)
 script = ExtResource("3_fgckq")
-next_scene = "res://scenes/mercado.tscn"
+next_scene = "res://scenes/credits.tscn"
 wall_path = NodePath("../PassageWall")
 trigger_path = NodePath("../PassageTrigger")
 open_distance = 3.5
