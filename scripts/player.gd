@@ -13,10 +13,11 @@ const JUMP_VELOCITY := 4.5
 
 var is_paused := false
 var is_reading := false
+var pause_overlay: ColorRect
+var pause_panel: Control
 
 var ui_layer: CanvasLayer
 var center_dot: ColorRect
-var pause_label: Label
 
 var inventario = {
 	"coletavel": 0
@@ -155,11 +156,13 @@ func alternar_pause() -> void:
 
 	if is_paused:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		pause_label.visible = true
+		pause_overlay.visible = true
+		pause_panel.visible = true
 		center_dot.visible = false
 	else:
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-		pause_label.visible = false
+		pause_overlay.visible = false
+		pause_panel.visible = false
 		center_dot.visible = true
 
 
@@ -184,27 +187,48 @@ func criar_ui() -> void:
 
 	ui_layer.add_child(center_dot)
 
-	pause_label = Label.new()
-	pause_label.text = "JOGO PAUSADO\nAperte ESC para voltar"
-	pause_label.visible = false
+	pause_overlay = ColorRect.new()
+	pause_overlay.set_anchors_preset(Control.PRESET_FULL_RECT)
+	pause_overlay.color = Color(0, 0, 0, 0.55)
+	pause_overlay.visible = false
+	pause_overlay.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	ui_layer.add_child(pause_overlay)
 
-	pause_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	pause_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	pause_panel = CenterContainer.new()
+	pause_panel.set_anchors_preset(Control.PRESET_FULL_RECT)
+	pause_panel.visible = false
+	ui_layer.add_child(pause_panel)
 
-	pause_label.anchor_left = 0.0
-	pause_label.anchor_right = 1.0
-	pause_label.anchor_top = 0.0
-	pause_label.anchor_bottom = 1.0
+	var vbox := VBoxContainer.new()
+	vbox.alignment = BoxContainer.ALIGNMENT_CENTER
+	vbox.add_theme_constant_override("separation", 20)
+	pause_panel.add_child(vbox)
 
-	pause_label.offset_left = 0
-	pause_label.offset_right = 0
-	pause_label.offset_top = 0
-	pause_label.offset_bottom = 0
+	var title := Label.new()
+	title.text = "Pausado"
+	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	title.add_theme_font_size_override("font_size", 48)
+	title.modulate = Color(1, 1, 1)
+	title.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	vbox.add_child(title)
 
-	pause_label.add_theme_font_size_override("font_size", 32)
-	pause_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	var spacer := Control.new()
+	spacer.custom_minimum_size = Vector2(0, 16)
+	vbox.add_child(spacer)
 
-	ui_layer.add_child(pause_label)
+	var btn_resume := Button.new()
+	btn_resume.text = "Voltar ao Jogo"
+	btn_resume.custom_minimum_size = Vector2(240, 50)
+	btn_resume.add_theme_font_size_override("font_size", 24)
+	btn_resume.pressed.connect(alternar_pause)
+	vbox.add_child(btn_resume)
+
+	var btn_quit := Button.new()
+	btn_quit.text = "Sair"
+	btn_quit.custom_minimum_size = Vector2(240, 50)
+	btn_quit.add_theme_font_size_override("font_size", 24)
+	btn_quit.pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/menu.tscn"))
+	vbox.add_child(btn_quit)
 
 
 func adicionar_item(nome_do_item: String) -> void:
