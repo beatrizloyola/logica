@@ -611,7 +611,7 @@ shape = SubResource("BoxShape3D_v8jcj")
 [node name="Passage" type="Node3D" parent="." unique_id=1599773867]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.347207, 0, -4.32098)
 script = ExtResource("7_rm4mh")
-next_scene = "res://scenes/mercado.tscn"
+next_scene = "res://scenes/bathroom.tscn"
 wall_path = NodePath("../PassageWall")
 trigger_path = NodePath("../PassageTrigger")
 open_distance = 3.5
