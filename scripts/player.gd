@@ -168,6 +168,7 @@ func alternar_pause() -> void:
 
 func criar_ui() -> void:
 	ui_layer = CanvasLayer.new()
+	ui_layer.layer = 75
 	add_child(ui_layer)
 
 	center_dot = ColorRect.new()
