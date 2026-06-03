@@ -116,6 +116,9 @@ albedo_color = Color(0.07058824, 0.07058824, 0.07058824, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_ark67"]
 
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_kl22a"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
 [sub_resource type="Sky" id="Sky_p2gs8"]
 
 [sub_resource type="Environment" id="Environment_0i4mx"]
@@ -456,6 +459,11 @@ surface_material_override/0 = SubResource("StandardMaterial3D_1oc2e")
 transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, -26.665565, 1.9125137, 29.250381)
 mesh = SubResource("BoxMesh_ark67")
 surface_material_override/0 = SubResource("StandardMaterial3D_1oc2e")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D2" unique_id=2094832541]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D2/StaticBody3D" unique_id=1922169493]
+shape = SubResource("ConcavePolygonShape3D_kl22a")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=244664610]
 environment = SubResource("Environment_0i4mx")
