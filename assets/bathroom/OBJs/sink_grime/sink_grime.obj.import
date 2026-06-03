@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b7ae5dslb6xgd"
+path="res://.godot/imported/sink_grime.obj-27ab9829cf9e18c8e84b86c282437abf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/sink_grime.obj-27ab9829cf9e18c8e84b86c282437abf.mesh"]
+
+source_file="res://assets/bathroom/OBJs/sink_grime/sink_grime.obj"
+dest_files=["res://.godot/imported/sink_grime.obj-27ab9829cf9e18c8e84b86c282437abf.mesh", "res://.godot/imported/sink_grime.obj-27ab9829cf9e18c8e84b86c282437abf.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

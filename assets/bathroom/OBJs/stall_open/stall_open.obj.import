@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://h5wjd43qhlm8"
+path="res://.godot/imported/stall_open.obj-6898f065be29458d1cc59c451fa05ff0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stall_open.obj-6898f065be29458d1cc59c451fa05ff0.mesh"]
+
+source_file="res://assets/bathroom/OBJs/stall_open/stall_open.obj"
+dest_files=["res://.godot/imported/stall_open.obj-6898f065be29458d1cc59c451fa05ff0.mesh", "res://.godot/imported/stall_open.obj-6898f065be29458d1cc59c451fa05ff0.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cagrk0fec7ejd"
+path="res://.godot/imported/floor_corner2.obj-203c05fe13a3d2a8d62adecc216e7eaf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/floor_corner2.obj-203c05fe13a3d2a8d62adecc216e7eaf.mesh"]
+
+source_file="res://assets/bathroom/OBJs/floor_corner2/floor_corner2.obj"
+dest_files=["res://.godot/imported/floor_corner2.obj-203c05fe13a3d2a8d62adecc216e7eaf.mesh", "res://.godot/imported/floor_corner2.obj-203c05fe13a3d2a8d62adecc216e7eaf.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

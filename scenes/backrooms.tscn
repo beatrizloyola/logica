@@ -18,6 +18,48 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_wgn7g"]
 height = 1.9208984
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d6um5"]
+resource_name = "Main"
+cull_mode = 2
+albedo_texture = ExtResource("6_kk6x8")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 10.0
+emission_operator = 1
+emission_texture = ExtResource("7_go25i")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ruh76"]
+_surfaces = [{
+"aabb": AABB(-5, 0, -19, 10, 1e-05, 20),
+"format": 34896613377,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAwAEAAEAAwAFAAQABQAGAAQABQAHAAYABwAIAAYABwAJAAgACQAKAAgACQALAAoACwAMAAoACwANAAwADQAOAAwADQAPAA4ADwAQAA4ADwARABAAEQASABAAEQATABIAEwAUABIAEwAVABQA"),
+"name": "Main",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 22,
+"vertex_data": PackedByteArray("AAAAAP//AAD//wAAZeYAAP//AAD//wAAAAAAAGXmAAD//wAAzMwAAAAAAADMzAAA//8AADKzAAAAAAAAMrMAAP//AACZmQAAAAAAAJmZAAD//wAA/38AAAAAAAD/fwAA//8AAGZmAAAAAAAAZmYAAP//AADMTAAAAAAAAMxMAAD//wAAMzMAAAAAAAAzMwAA//8AAJkZAAAAAAAAmRkAAP//AAAAAAAAAAAAAAAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_y1yr2"]
+resource_name = "Sketchfab_Scene_Object_0"
+_surfaces = [{
+"aabb": AABB(-5, 0, -19, 10, 1e-05, 20),
+"attribute_data": PackedByteArray("VCz//1Qs/////4DH//+Ax/7////+////VCyAx1QsgMdULP//VCz/////gMf//4DH/v////7///9ULIDHVCyAx1Qs//9ULP////+Ax///gMf+/////v///1QsgMdULIDHVCz//1Qs/////4DH//+Ax/7////+////VCyAx1QsgMdULP//VCz/////gMf//4DH/v////7///9ULIDHVCyAx1Qs//9ULP////+Ax///gMf+/////v///1QsgMdULIDHVCz//1Qs/////4DH//+Ax/7////+////VCyAx1QsgMdULP//VCz/////gMf//4DH/v////7///9ULIDHVCyAx1Qs//9ULP////+Ax///gMf+/////v///1QsgMdULIDHVCz//1Qs/////4DH//+Ax/7////+////VCyAx1QsgMc="),
+"format": 34896613431,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUA"),
+"material": SubResource("StandardMaterial3D_d6um5"),
+"name": "Main",
+"primitive": 3,
+"uv_scale": Vector4(2.1085608, 1.5800022, 2.1085608, 1.5800022),
+"vertex_count": 40,
+"vertex_data": PackedByteArray("AAAAAP///7///wAAZeb/v///AAD///+/AAAAAGXm/78AAAAAZeb/v///AADMzP+///8AAGXm/78AAAAAzMz/vwAAAADMzP+///8AADKz/7///wAAzMz/vwAAAAAys/+/AAAAADKz/7///wAAmZn/v///AAAys/+/AAAAAJmZ/78AAAAAmZn/v///AAD/f/+///8AAJmZ/78AAAAA/3//vwAAAAD/f/+///8AAGZm/7///wAA/3//vwAAAABmZv+/AAAAAGZm/7///wAAzEz/v///AABmZv+/AAAAAMxM/78AAAAAzEz/v///AAAzM/+///8AAMxM/78AAAAAMzP/vwAAAAAzM/+///8AAJkZ/7///wAAMzP/vwAAAACZGf+/AAAAAJkZ/7///wAAAAD/v///AACZGf+/AAAAAAAA/7////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ruh76")
+
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_655on"]
 data = PackedVector3Array(-5, 0, 1, 5, 0, -1.0002, 5, 0, 1, -5, 0, 1, -5, 0, -1.0002, 5, 0, -1.0002, -5, 0, -1.0002, 5, 0, -3, 5, 0, -1.0002, -5, 0, -1.0002, -5, 0, -3, 5, 0, -3, -5, 0, -3, 5, 0, -5.0002, 5, 0, -3, -5, 0, -3, -5, 0, -5.0002, 5, 0, -5.0002, -5, 0, -5.0002, 5, 0, -7, 5, 0, -5.0002, -5, 0, -5.0002, -5, 0, -7, 5, 0, -7, -5, 0, -7, 5, 0, -9.000199, 5, 0, -7, -5, 0, -7, -5, 0, -9.000199, 5, 0, -9.000199, -5, 0, -9.000199, 5, 0, -11, 5, 0, -9.000199, -5, 0, -9.000199, -5, 0, -11, 5, 0, -11, -5, 0, -11, 5, 0, -13.000199, 5, 0, -11, -5, 0, -11, -5, 0, -13.000199, 5, 0, -13.000199, -5, 0, -13.000199, 5, 0, -15, 5, 0, -13.000199, -5, 0, -13.000199, -5, 0, -15, 5, 0, -15, -5, 0, -15, 5, 0, -17.0002, 5, 0, -15, -5, 0, -15, -5, 0, -17.0002, 5, 0, -17.0002, -5, 0, -17.0002, 5, 0, -19, 5, 0, -17.0002, -5, 0, -17.0002, -5, 0, -19, 5, 0, -19)
 
@@ -63,7 +105,7 @@ data = PackedVector3Array(-2.5907, 0.0056, 0.0602, 1.0014, 2.0056, 0.0602, 1.001
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_kmwl1"]
 data = PackedVector3Array(1.0008, 0.0056, -0.0614, -0.9992, 2.0056, -0.0614, -0.9992, 0.0056, -0.0614, 1.0008, 0.0056, -0.0614, 1.0008, 2.0056, -0.0614, -0.9992, 2.0056, -0.0614, 1.0008, 0.0056, 0.0581, -0.9992, 2.0056, 0.0581, 1.0008, 2.0056, 0.0581, 1.0008, 0.0056, 0.0581, -0.9992, 0.0056, 0.0581, -0.9992, 2.0056, 0.0581, -0.9992, 2.0056, -0.0614, -0.9992, 0.0056, 0.0581, -0.9992, 0.0056, -0.0614, -0.9992, 2.0056, -0.0614, -0.9992, 2.0056, 0.0581, -0.9992, 0.0056, 0.0581, 1.0008, 0.0056, -0.0614, 1.0008, 2.0056, 0.0581, 1.0008, 2.0056, -0.0614, 1.0008, 0.0056, -0.0614, 1.0008, 0.0056, 0.0581, 1.0008, 2.0056, 0.0581, -1.0073999, 1.9574, 0.0799, 1.0066999, 1.9574, -0.0707, -1.0073999, 1.9574, -0.0707, -1.0073999, 1.9574, 0.0799, 1.0066999, 1.9574, 0.0797, 1.0066999, 1.9574, -0.0707, -1.0073999, 1.9574, -0.0707, -1.0073999, 2.0112, 0.0801, -1.0073999, 1.9574, 0.0799, -1.0073999, 1.9574, -0.0707, -1.0073999, 2.0112, -0.0707, -1.0073999, 2.0112, 0.0801, 1.0066999, 1.9574, -0.0707, -1.0073999, 2.0112, -0.0707, -1.0073999, 1.9574, -0.0707, 1.0066999, 1.9574, -0.0707, 1.0066999, 2.0112, -0.0707, -1.0073999, 2.0112, -0.0707, 1.0066999, 1.9574, -0.0707, 1.0066999, 2.0112, 0.079799995, 1.0066999, 2.0112, -0.0707, 1.0066999, 1.9574, -0.0707, 1.0066999, 1.9574, 0.0797, 1.0066999, 2.0112, 0.079799995, 1.0066999, 1.9574, 0.0797, -1.0073999, 2.0112, 0.0801, 1.0066999, 2.0112, 0.079799995, 1.0066999, 1.9574, 0.0797, -1.0073999, 1.9574, 0.0799, -1.0073999, 2.0112, 0.0801, -1.0073999, 0.1046, -0.070599996, -1.0073999, 0, 0.065, -1.0073999, 0, -0.070599996, -1.0073999, 0.1046, -0.070599996, -1.0073999, 0.1046, 0.0648, -1.0073999, 0, 0.065, -1.0073999, 0.1046, 0.0648, 1.0066999, 0.1046, -0.070599996, 1.0066999, 0.1046, 0.0646, -1.0073999, 0.1046, 0.0648, -1.0073999, 0.1046, -0.070599996, 1.0066999, 0.1046, -0.070599996, 1.0066999, 0.1046, -0.070599996, -1.0073999, 0, -0.070599996, 1.0066999, 0, -0.070599996, 1.0066999, 0.1046, -0.070599996, -1.0073999, 0.1046, -0.070599996, -1.0073999, 0, -0.070599996, 1.0066999, 0.1046, -0.070599996, 1.0066999, 0, 0.0646, 1.0066999, 0.1046, 0.0646, 1.0066999, 0.1046, -0.070599996, 1.0066999, 0, -0.070599996, 1.0066999, 0, 0.0646, 1.0066999, 0.1046, 0.0646, -1.0073999, 0, 0.065, -1.0073999, 0.1046, 0.0648, 1.0066999, 0.1046, 0.0646, 1.0066999, 0, 0.0646, -1.0073999, 0, 0.065)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d6um5"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kk6x8"]
 resource_name = "Main"
 cull_mode = 2
 albedo_texture = ExtResource("4_65psr")
@@ -97,7 +139,7 @@ _surfaces = [{
 "index_count": 84,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUA"),
 "lods": [1.0112851, PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0A")],
-"material": SubResource("StandardMaterial3D_d6um5"),
+"material": SubResource("StandardMaterial3D_kk6x8"),
 "name": "Main",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -191,6 +233,14 @@ size = Vector3(0.4, 0.4, 0.4)
 [sub_resource type="BoxShape3D" id="BoxShape3D_7gp3u"]
 size = Vector3(9.711548, 2.8973389, 0.62976074)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_65psr"]
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 3.51
+
+[sub_resource type="BoxMesh" id="BoxMesh_v0yhu"]
+material = SubResource("StandardMaterial3D_65psr")
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_nlhum"]
 size = Vector3(10, 3, 0.3)
 
@@ -241,33 +291,33 @@ current = true
 [node name="Map" parent="." unique_id=712112690 instance=ExtResource("3_1kqkm")]
 transform = Transform3D(1.6882465, 0, 0, 0, 1.5420752, 0, 0, 0, 1.344394, 7.950404, 0, 0)
 
-[node name="Sketchfab_model" parent="Map" index="0" unique_id=2098939188]
+[node name="Sketchfab_model" parent="Map" index="0" unique_id=1966327968]
 transform = Transform3D(2.0330846, 0, 0, 0, 3.425197e-16, 1.546718, 0, -1.5425708, 3.434404e-16, 17.86443, 0, 0)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Floor_001_0/Object_4" parent_id_path=PackedInt32Array(712112690, 848423051) index="0" unique_id=1906075301]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Floor_001_0/Object_4" parent_id_path=PackedInt32Array(712112690, 306576673) index="0" unique_id=1906075301]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Floor_001_0/Object_4/StaticBody3D" unique_id=1188336154]
 shape = SubResource("ConcavePolygonShape3D_655on")
 
-[node name="Pillar_004_1" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode" parent_id_path=PackedInt32Array(712112690, 117866347) index="1" unique_id=564687576]
+[node name="Pillar_004_1" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode" parent_id_path=PackedInt32Array(712112690, 463841839) index="1" unique_id=1747447188]
 transform = Transform3D(1.0000004, 0, 0, 0, 1, 0, 0, 1.0339758e-25, 1.0000004, -12.777169, 7.4216795e-19, 1.4641248)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Pillar_004_1/Object_6" parent_id_path=PackedInt32Array(712112690, 1352189293) index="0" unique_id=1730399922]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Pillar_004_1/Object_6" parent_id_path=PackedInt32Array(712112690, 1286856778) index="0" unique_id=1730399922]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Pillar_004_1/Object_6/StaticBody3D" unique_id=494751720]
 shape = SubResource("ConcavePolygonShape3D_y1yr2")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Pillar_005_2/Object_8" parent_id_path=PackedInt32Array(712112690, 291588103) index="0" unique_id=1176189503]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Pillar_005_2/Object_8" parent_id_path=PackedInt32Array(712112690, 980965083) index="0" unique_id=1176189503]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Pillar_005_2/Object_8/StaticBody3D" unique_id=812565576]
 shape = SubResource("ConcavePolygonShape3D_kk6x8")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Pillar_006_3/Object_10" parent_id_path=PackedInt32Array(712112690, 695034285) index="0" unique_id=368928360]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Pillar_006_3/Object_10" parent_id_path=PackedInt32Array(712112690, 1571626506) index="0" unique_id=368928360]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Pillar_006_3/Object_10/StaticBody3D" unique_id=583001028]
 shape = SubResource("ConcavePolygonShape3D_go25i")
 
-[node name="Object_12" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall (Connected)_002_4" parent_id_path=PackedInt32Array(712112690, 2070446507) index="0" unique_id=1600046329]
+[node name="Object_12" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall (Connected)_002_4" parent_id_path=PackedInt32Array(712112690, 1582556366) index="0" unique_id=589121819]
 transform = Transform3D(1.0000005, 1.0339758e-25, 4.2632564e-14, 0, 1, -3.6977855e-32, -1.4210855e-14, -1.8488927e-32, 1.0000005, -3.8146973e-06, 0, 8.076307)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall (Connected)_002_4/Object_12" index="0" unique_id=763042175]
@@ -275,12 +325,12 @@ transform = Transform3D(1.0000005, 1.0339758e-25, 4.2632564e-14, 0, 1, -3.697785
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall (Connected)_002_4/Object_12/StaticBody3D" unique_id=228877604]
 shape = SubResource("ConcavePolygonShape3D_oeb7n")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Ceiling_001_5/Object_14" parent_id_path=PackedInt32Array(712112690, 378122260) index="0" unique_id=1254084662]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Ceiling_001_5/Object_14" parent_id_path=PackedInt32Array(712112690, 1235537383) index="0" unique_id=1254084662]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Ceiling_001_5/Object_14/StaticBody3D" unique_id=2088553839]
 shape = SubResource("ConcavePolygonShape3D_8rsp6")
 
-[node name="Object_16" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall (Connected)_001_6" parent_id_path=PackedInt32Array(712112690, 1259621377) index="0" unique_id=742497899]
+[node name="Object_16" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall (Connected)_001_6" parent_id_path=PackedInt32Array(712112690, 137949753) index="0" unique_id=1114742961]
 transform = Transform3D(1.0000002, -1.0339758e-25, 0, 0, 1, 0, 0, 0, 1.0000002, 0, 0.02577062, -0.025280952)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall (Connected)_001_6/Object_16" index="0" unique_id=150394806]
@@ -288,7 +338,7 @@ transform = Transform3D(1.0000002, -1.0339758e-25, 0, 0, 1, 0, 0, 0, 1.0000002, 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall (Connected)_001_6/Object_16/StaticBody3D" unique_id=1027632066]
 shape = SubResource("ConcavePolygonShape3D_xx1vg")
 
-[node name="Object_18" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Mid Wood Panel_001_7" parent_id_path=PackedInt32Array(712112690, 248882285) index="0" unique_id=799956269]
+[node name="Object_18" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Mid Wood Panel_001_7" parent_id_path=PackedInt32Array(712112690, 665628323) index="0" unique_id=887897339]
 transform = Transform3D(1.0000004, 5.684342e-14, -1.4573987e-21, 0, 1.0000004, -2.5410988e-21, -2.842171e-14, -1.6940659e-21, 1, 0.4058814, 0.81028605, -5.9604645e-08)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Mid Wood Panel_001_7/Object_18" index="0" unique_id=1979938848]
@@ -296,7 +346,7 @@ transform = Transform3D(1.0000004, 5.684342e-14, -1.4573987e-21, 0, 1.0000004, -
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Mid Wood Panel_001_7/Object_18/StaticBody3D" unique_id=648242869]
 shape = SubResource("ConcavePolygonShape3D_x4tqr")
 
-[node name="Object_20" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Mid Wood Panel_002_8" parent_id_path=PackedInt32Array(712112690, 1429667345) index="0" unique_id=912054909]
+[node name="Object_20" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Mid Wood Panel_002_8" parent_id_path=PackedInt32Array(712112690, 395007782) index="0" unique_id=586602942]
 transform = Transform3D(0.92129827, 0, -1.0339758e-25, 0, 1.0000007, 0, 0, 0, 1, 0.36418998, 0, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Mid Wood Panel_002_8/Object_20" index="0" unique_id=1694087382]
@@ -304,7 +354,7 @@ transform = Transform3D(0.92129827, 0, -1.0339758e-25, 0, 1.0000007, 0, 0, 0, 1,
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Mid Wood Panel_002_8/Object_20/StaticBody3D" unique_id=1786226817]
 shape = SubResource("ConcavePolygonShape3D_wmxy6")
 
-[node name="Object_22" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Mid Wood Panel_003_9" parent_id_path=PackedInt32Array(712112690, 1849605807) index="0" unique_id=1032412015]
+[node name="Object_22" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Mid Wood Panel_003_9" parent_id_path=PackedInt32Array(712112690, 1378934759) index="0" unique_id=919600694]
 transform = Transform3D(1.0000001, 0, 1.4562737e-22, 0, 1.0000001, -2.1175824e-22, 1.3624866e-22, -2.1175824e-22, 1, 0, -0.05638981, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Mid Wood Panel_003_9/Object_22" index="0" unique_id=2089127813]
@@ -312,30 +362,30 @@ transform = Transform3D(1.0000001, 0, 1.4562737e-22, 0, 1.0000001, -2.1175824e-2
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Mid Wood Panel_003_9/Object_22/StaticBody3D" unique_id=1684848756]
 shape = SubResource("ConcavePolygonShape3D_7gp3u")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_008_10/Object_24" parent_id_path=PackedInt32Array(712112690, 1544172589) index="0" unique_id=908485128]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_008_10/Object_24" parent_id_path=PackedInt32Array(712112690, 689602566) index="0" unique_id=908485128]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_008_10/Object_24/StaticBody3D" unique_id=1467950040]
 shape = SubResource("ConcavePolygonShape3D_nlhum")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_010_11/Object_26" parent_id_path=PackedInt32Array(712112690, 884806869) index="0" unique_id=1396549708]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_010_11/Object_26" parent_id_path=PackedInt32Array(712112690, 1767137616) index="0" unique_id=1396549708]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_010_11/Object_26/StaticBody3D" unique_id=727275144]
 shape = SubResource("ConcavePolygonShape3D_iw3bm")
 
-[node name="Wall_chunk_012_12" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode" parent_id_path=PackedInt32Array(712112690, 117866347) index="12" unique_id=782483964]
+[node name="Wall_chunk_012_12" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode" parent_id_path=PackedInt32Array(712112690, 463841839) index="12" unique_id=431461423]
 transform = Transform3D(-1.0000004, 0, 1.5099583e-07, 1.2325952e-32, 1, 0, -1.5099585e-07, 1.0339758e-25, -1.0000004, -17.373154, -0.01838217, 5.215782)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_012_12/Object_28" parent_id_path=PackedInt32Array(712112690, 2072286067) index="0" unique_id=365365192]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_012_12/Object_28" parent_id_path=PackedInt32Array(712112690, 280381953) index="0" unique_id=365365192]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_012_12/Object_28/StaticBody3D" unique_id=223076451]
 shape = SubResource("ConcavePolygonShape3D_70ugw")
 
-[node name="StaticBody3D2" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_012_12/Object_28" parent_id_path=PackedInt32Array(712112690, 2072286067) index="1" unique_id=1598346431]
+[node name="StaticBody3D2" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_012_12/Object_28" parent_id_path=PackedInt32Array(712112690, 280381953) index="1" unique_id=1598346431]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_012_12/Object_28/StaticBody3D2" unique_id=1462135194]
 shape = SubResource("ConcavePolygonShape3D_dmq8d")
 
-[node name="Object_30" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_013_13" parent_id_path=PackedInt32Array(712112690, 1544342472) index="0" unique_id=522386501]
+[node name="Object_30" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_013_13" parent_id_path=PackedInt32Array(712112690, 54312781) index="0" unique_id=1555418077]
 transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 5.169879e-26, 1.0000001, 0, -0.023348005, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_013_13/Object_30" index="0" unique_id=1917174982]
@@ -361,18 +411,18 @@ shape = SubResource("ConcavePolygonShape3D_kmwl1")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_013_13/Object_30/Object_30/StaticBody3D" unique_id=204426552]
 shape = SubResource("ConcavePolygonShape3D_kmwl1")
 
-[node name="Wall_chunk_005_14" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode" parent_id_path=PackedInt32Array(712112690, 117866347) index="14" unique_id=1349198833]
+[node name="Wall_chunk_005_14" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode" parent_id_path=PackedInt32Array(712112690, 463841839) index="14" unique_id=1590576983]
 transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 5.169879e-26, 1.0000001, 126.49904, -0.012682291, -7.083545)
 
-[node name="Object_32" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_005_14" index="0" unique_id=281639400]
+[node name="Object_32" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_005_14" index="0" unique_id=164656080]
 visible = false
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_011_15/Object_34" parent_id_path=PackedInt32Array(712112690, 1815668782) index="0" unique_id=1671416242]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_011_15/Object_34" parent_id_path=PackedInt32Array(712112690, 1516277336) index="0" unique_id=1671416242]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Wall_chunk_011_15/Object_34/StaticBody3D" unique_id=255047499]
 shape = SubResource("ConcavePolygonShape3D_x5mx3")
 
-[node name="Object_36" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Double Socket_001_16" parent_id_path=PackedInt32Array(712112690, 1287761799) index="0" unique_id=184311439]
+[node name="Object_36" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Double Socket_001_16" parent_id_path=PackedInt32Array(712112690, 1957228684) index="0" unique_id=1563318653]
 transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 1, -0.6484184, 0, 1.2944727)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Double Socket_001_16/Object_36" index="0" unique_id=73337854]
@@ -380,22 +430,22 @@ transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 1, -0.6484184, 0, 1.2944
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Double Socket_001_16/Object_36/StaticBody3D" unique_id=1378378988]
 shape = SubResource("ConcavePolygonShape3D_grp0m")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Double Socket_002_17/Object_38" parent_id_path=PackedInt32Array(712112690, 1301854069) index="0" unique_id=113790647]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Double Socket_002_17/Object_38" parent_id_path=PackedInt32Array(712112690, 1818326385) index="0" unique_id=113790647]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Double Socket_002_17/Object_38/StaticBody3D" unique_id=110361658]
 shape = SubResource("ConcavePolygonShape3D_1702c")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Double Socket_003_18/Object_40" parent_id_path=PackedInt32Array(712112690, 1578347338) index="0" unique_id=164419033]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Double Socket_003_18/Object_40" parent_id_path=PackedInt32Array(712112690, 1904950442) index="0" unique_id=164419033]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Double Socket_003_18/Object_40/StaticBody3D" unique_id=30038002]
 shape = SubResource("ConcavePolygonShape3D_y66yi")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/Object_42" parent_id_path=PackedInt32Array(712112690, 607440529) index="0" unique_id=1172848238]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/Object_42" parent_id_path=PackedInt32Array(712112690, 1619202631) index="0" unique_id=1172848238]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19/Object_42/StaticBody3D" unique_id=341839846]
 shape = SubResource("ConcavePolygonShape3D_ihhod")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19" parent_id_path=PackedInt32Array(712112690, 1014742500) index="1" unique_id=11903482]
+[node name="OmniLight3D" type="OmniLight3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Light Panel_001_19" parent_id_path=PackedInt32Array(712112690, 1759245540) index="1" unique_id=11903482]
 transform = Transform3D(0.19736665, 0, 0, 0, 0.28401968, -3.4186387e-19, 0, -3.877409e-26, 0.32665807, 0, -0.07785666, 0)
 light_energy = 1.792
 shadow_enabled = true
@@ -683,10 +733,10 @@ distance_fade_enabled = true
 omni_range = 8.898
 omni_attenuation = 1.312
 
-[node name="Object_44" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Icosphere_20" parent_id_path=PackedInt32Array(712112690, 1317691962) index="0" unique_id=1045821827]
+[node name="Object_44" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/Icosphere_20" parent_id_path=PackedInt32Array(712112690, 2099857386) index="0" unique_id=2076921054]
 transform = Transform3D(1, 0, 5.5879354e-09, 0, 0.9999997, 1.6155871e-27, 0, 9.693523e-27, 0.99999976, 0, 2.3549979, 0)
 
-[node name="outra_parede" type="Node3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode" parent_id_path=PackedInt32Array(712112690, 117866347) index="21" unique_id=311866775]
+[node name="outra_parede" type="Node3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode" parent_id_path=PackedInt32Array(712112690, 463841839) index="21" unique_id=311866775]
 transform = Transform3D(-4.3711427e-08, 0, -1.0000007, 0, 1, 0, 1.000001, 5.169879e-26, -4.3711417e-08, -8.078543, -5.3431463e-18, 8.976167)
 
 [node name="Object_16" type="MeshInstance3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/outra_parede" unique_id=1596494105]
@@ -698,7 +748,7 @@ mesh = SubResource("ArrayMesh_x75nv")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode/outra_parede/Object_16/StaticBody3D" unique_id=1280263833]
 shape = SubResource("ConcavePolygonShape3D_xx1vg")
 
-[node name="Pillar_004_2" type="Node3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode" parent_id_path=PackedInt32Array(712112690, 117866347) index="22" unique_id=2002769773]
+[node name="Pillar_004_2" type="Node3D" parent="Map/Sketchfab_model/root/GLTF_SceneRootNode" parent_id_path=PackedInt32Array(712112690, 463841839) index="22" unique_id=2002769773]
 transform = Transform3D(1.0000007, 0, 0, 0, 1, 0, 0, 1.0339758e-25, 1.0000007, -13.457226, -2.0088054e-18, 6.0855966)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1206873405]
@@ -740,6 +790,10 @@ mesh = SubResource("BoxMesh_wmxy6")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="PassageWall" unique_id=619942606]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.7243557)
 shape = SubResource("BoxShape3D_7gp3u")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=786615663]
+transform = Transform3D(9.67, 0, 0, 0, 2.68, 0, 0, 0, 0.3, 0, 1.5, -20.712593)
+mesh = SubResource("BoxMesh_v0yhu")
 
 [node name="PassageTrigger" type="Area3D" parent="." unique_id=1766811406]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -20.467733)

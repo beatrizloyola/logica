@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://f858flej75jo"
+path="res://.godot/imported/floor_edge_grime.obj-c1ebf5673c5062e1027b5ba4ab28a15e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/floor_edge_grime.obj-c1ebf5673c5062e1027b5ba4ab28a15e.mesh"]
+
+source_file="res://assets/bathroom/OBJs/floor_edge_grime/floor_edge_grime.obj"
+dest_files=["res://.godot/imported/floor_edge_grime.obj-c1ebf5673c5062e1027b5ba4ab28a15e.mesh", "res://.godot/imported/floor_edge_grime.obj-c1ebf5673c5062e1027b5ba4ab28a15e.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
