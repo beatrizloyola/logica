@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://cwisjpfi53yws"]
+
+[ext_resource type="PackedScene" uid="uid://b6bc8mbngnfpj" path="res://assets/mercado/source/магазин.glb" id="1_jacxh"]
+
+[sub_resource type="Environment" id="Environment_rmmb3"]
+background_mode = 1
+background_color = Color(0.14406255, 0.14406255, 0.14406255, 1)
+background_energy_multiplier = 2.6
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 10.15
+fog_enabled = true
+fog_light_energy = 0.8
+fog_sky_affect = 0.505
+volumetric_fog_enabled = true
+adjustment_enabled = true
+adjustment_brightness = 0.7
+adjustment_contrast = 1.1
+
+[node name="Node3D" type="Node3D" unique_id=1913688109]
+
+[node name="магазин" parent="." unique_id=518227643 instance=ExtResource("1_jacxh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.590619, 3.5762787e-07, 1.073585)
+
+[node name="Cube_002" parent="магазин" index="2" unique_id=1207167660]
+visible = false
+
+[node name="Cube_004" parent="магазин" index="4" unique_id=1199172416]
+visible = false
+gi_lightmap_texel_scale = 0.615
+
+[node name="Cube_005" parent="магазин" index="5" unique_id=851877268]
+visible = false
+
+[node name="Point" parent="магазин" index="3461" unique_id=1094334491]
+visible = false
+
+[node name="Point_001" parent="магазин" index="3462" unique_id=956038930]
+visible = false
+shadow_normal_bias = 0.01
+shadow_blur = 0.515
+omni_attenuation = 10.0
+
+[node name="Cube_003" parent="магазин" index="3489" unique_id=1655380578]
+visible = false
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2101491301]
+environment = SubResource("Environment_rmmb3")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="WorldEnvironment" unique_id=1251292016]
+transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, -3.7977352, 4.6073103, -0.31524336)
+light_energy = 0.8
+light_indirect_energy = 0.0
+light_specular = 0.342
+omni_range = 6.0
+omni_attenuation = 0.2
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="WorldEnvironment" unique_id=560076495]
+transform = Transform3D(1, 0, 0, 0, 1, 5.169879e-26, 0, -5.169879e-26, 1, 6.935371, 4.6073103, 3.5631118)
+light_indirect_energy = 0.0
+light_specular = 0.342
+omni_range = 6.0
+omni_attenuation = 0.2
+
+[editable path="магазин"]
